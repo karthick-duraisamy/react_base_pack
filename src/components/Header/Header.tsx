@@ -56,38 +56,6 @@ const HeaderItems = () => {
   const [SgetAirlineCode] = sessionStorageAccessor("airlineCode");
   const { isSmallScreen } = useResize(767);
 
-  // Notification
-  // const [pushNewTokenService, pushNewTokenResponse] = usePushTokenMutation();
-  // const tokenSentRef = useRef(false);
-
-  // const userDetail = hydrateUserFromLocalStorage();
-  /* Posting tokenData when user logged in if token already not sent */
-  // useEffect(() => {
-    // if (tokenSentRef.current) return;
-    // tokenSentRef.current = true;
-    // if (localStorage.getItem('firebaseToken') === 'true') {
-    //   return;
-    // }
-    // reqToken()
-    //   .then((currentToken: any) => {
-    //     const pushTokenPostData = {
-    //       email_id: userDetail?.email,
-    //       fcm_token: currentToken,
-    //       project_code: 'GRM'
-    //     };
-    //     return;
-    //   })
-    //   .then((resolvedValue: any) => {
-    //     if (resolvedValue.data.responseCode === 0) {
-    //       localStorage.setItem('firebaseToken', JSON.stringify(true));
-    //     }
-    //   })
-    //   .catch((error: any) => {
-    //     console.log('An error occurred:', error);
-    //     localStorage.setItem('firebaseToken', JSON.stringify(false));
-    // });
-  // }, []);
-
   let userName = user?.firstName + " " + user?.lastName;
 
   let userRole;
