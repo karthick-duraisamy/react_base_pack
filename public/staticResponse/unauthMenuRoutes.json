@@ -7,22 +7,6 @@
       "route": [
         {
           "id": 1,
-          "path": "/planB",
-          "layout": "PlanBLayout",
-          "title": "Plan B",
-          "description": "Need to add",
-          "component": "PlanB"
-        },
-        {
-          "id": 2,
-          "path": "/viewPnrInfo",
-          "layout": "PlanBLayout",
-          "title": "View PNR Info",
-          "description": "Need to add",
-          "component": "ViewPnrInfo"
-        },
-        {
-          "id": 3,
           "path": "/login",
           "layout": "LandingLayout",
           "title": "Login",
@@ -31,7 +15,7 @@
           "default": true
         },
         {
-          "id": 4,
+          "id": 2,
           "path": "/forgot-password",
           "layout": "LandingLayout",
           "title": "Forgot Password",
@@ -39,7 +23,7 @@
           "component": "ForgotPassword"
         },
         {
-          "id": 5,
+          "id": 3,
           "path": "/login-with-otp",
           "layout": "LandingLayout",
           "title": "Login with OTP",
@@ -47,7 +31,7 @@
           "component": "LoginWithOTP"
         },
         {
-          "id": 6,
+          "id": 4,
           "path": "/reset-password",
           "layout": "LandingLayout",
           "title": "Reset Password",

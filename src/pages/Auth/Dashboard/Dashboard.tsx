@@ -36,13 +36,11 @@ import {
   Select,
   Switch,
   Typography,
-  // Tooltip as AntdTooltip
 } from "antd";
 import { NotificationOutlined, UserOutlined } from "@ant-design/icons";
 import type { TableProps } from "antd";
 import DashboardSkeleton from "./Dashboard.skeleton";
 import { getDynamicDate } from "@/utils/general";
-// import { useRedirect } from "@/hooks/Redirect.hook";
 import { useResize } from "@/utils/resize";
 import TableDisplay from "@/components/Table/Table";
 
@@ -60,7 +58,7 @@ const Dashboard = () => {
   const [getBarChartData, BarChartDataResponse] = useGetBarChartDataMutation();
   const [chart_type, setchartType] = useState("line_chart");
   const [turaround_type, setTuraround_type] = useState(true);
-  // const { redirect } = useRedirect();
+
   const [getDashboardAdhocData, DashboardAdhocDataResponse] =
     useGetDashboardAdhocDataMutation();
   const [getDashboardPaxData, DashboardPaxDataResponse] =
@@ -155,25 +153,6 @@ const Dashboard = () => {
     AttentionDataResponse?.isSuccess,
     TurnAroundTimeDataResponse?.isSuccess
   ]);
-  // eslint-disable-next-line
-  // const [attention_header_col, setAttention_header_col] = useState([
-  //   "Flight no",
-  //   "Sector",
-  //   "Std departure",
-  //   "Etd departure",
-  //   "PNR",
-  //   "Passengers",
-  //   "Status",
-  //   "Action",
-  //   // t("flight_no"),
-  //   // t("sector"),
-  //   // t("std_departure"),
-  //   // t("etd_departure"),
-  //   // "PNR",
-  //   // t("passengers"),
-  //   // t("status"),
-  //   // t("action"),
-  // ]);
 
   const handleBarChart = (e: any) => {
     setBar_chart_data(
@@ -182,12 +161,6 @@ const Dashboard = () => {
         : (BarChartDataResponse?.data as any).response?.data?.preplanned
     );
   };
-
-  // const split_pnr = (pnr: any) => {
-  //   const parts = pnr.split(" ");
-  //   const remaining = parts.slice(1).join(" ");
-  //   return remaining;
-  // };
 
   const columns: TableProps<any>["columns"] = [
     {
@@ -263,87 +236,6 @@ const Dashboard = () => {
   const handleSwitch = (e: any) => {
     setTuraround_type(e);
   };
-
-  // const dataSource = [
-  //   {
-  //     key: '1',
-  //     name: 'Mike',
-  //     age: 32,
-  //     address: '10 Downing Street',
-  //   },
-  //   {
-  //     key: '2',
-  //     name: 'John',
-  //     age: 42,
-  //     address: '10 Downing Street',
-  //   },
-  // ];
-
-  // const columnsData: any[] = [
-  //   {
-  //     title: 'Flight no',
-  //     dataIndex: 'flightNumber',
-  //     key: 'flightNumber',
-  //     className: "cls-flightNumber"
-  //   },
-  //   {
-  //     title: 'Sector',
-  //     dataIndex: 'sector',
-  //     key: 'sector',
-  //     className: "cls-sector"
-
-  //   },
-  //   {
-  //     title: 'Std departure',
-  //     dataIndex: 'stdDeparture',
-  //     key: 'stdDeparture',
-  //     className: "cls-stdDeparture",
-  //   },
-  //   {
-  //     title: 'Etd departure',
-  //     dataIndex: 'etdDeparture',
-  //     key: 'etdDeparture',
-  //     className: "cls-etdDeparture"
-  //   },
-  //   {
-  //     title: 'PNR',
-  //     dataIndex: 'pnr',
-  //     key: 'pnr',
-  //     className: "cls-pnr"
-
-  //   },
-  //   {
-  //     title: 'Passengers',
-  //     dataIndex: 'passenger',
-  //     key: 'passenger',
-  //     className: "cls-passenger"
-
-  //   },
-  //   {
-  //     title: 'Status',
-  //     dataIndex: 'status',
-  //     key: 'status',
-  //     className: "cls-status"
-
-  //   },
-  //   {
-  //     title: 'Action',
-  //     dataIndex: 'action',
-  //     key: 'action',
-  //     className: "cls-action"
-
-  //   },
-  //   {
-  //     dataIndex: 'duration',
-  //     key: 'duration',
-  //     className: "cls-duration",
-  //     render: (text: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Iterable<ReactI18NextChild> | null | undefined) => (
-  //       <span className="fs-10 cls-duration">
-  //         {text}
-  //       </span>
-  //     ),
-  //   },
-  // ];
 
   const columnsData: any[] = [
     {
@@ -512,19 +404,12 @@ const Dashboard = () => {
                     ]}
                   />
                 </Col>
-                {/* <Col xs={24} md={12} sm={12} offset={1}>
-                  <Input
-                    className="cls-pnrInput"
-                    placeholder={`${t("search")} ${t("flight")}`}
-                    suffix={<Text className="Infi-07_Search" />}
-                  ></Input>
-                </Col> */}
               </Row>
             </Col>
           </Row>
           <Row gutter={[16, 16]} className="cls-row rg-8">
-            {dashbaord_pax_data?.map((item: any) => (
-              <Col xs={24} sm={12} md={12} lg={6} xl={6} className="cls-gap">
+            {dashbaord_pax_data?.map((item: any, index: any) => (
+              <Col key={index} xs={24} sm={12} md={12} lg={6} xl={6} className="cls-gap">
                 <Card className="cls-pax-card">
                   <Row justify="space-between">
                     <Col span={15}>
@@ -576,8 +461,8 @@ const Dashboard = () => {
               </Col>
             ))}
 
-            {dashbaord_adhoc_data?.map((item: any) => (
-              <Col xs={24} sm={12} md={12} lg={6} xl={6} className="cls-gap">
+            {dashbaord_adhoc_data?.map((item: any, index: any) => (
+              <Col xs={24} key={index} sm={12} md={12} lg={6} xl={6} className="cls-gap">
                 <Card className="cls-adhoc-card">
                   <Row>
                     <Col span={24}>
@@ -663,71 +548,7 @@ const Dashboard = () => {
                     />
                   </Col>
                 </Row>
-                {/* <Row className="cls-attention-header mt-10" align="middle">
-                  {attention_header_col?.map((item) => (
-                    <Col
-                      className="fs-12"
-                      span={
-                        item === "Std departure" ? 4 : item === "Status" ? 2 : 3
-                      }
-                    >
-                      {item}
-                    </Col>
-                  ))}
-                </Row>
-                {attentionRowData?.map((item: any, index: any) => (
-                  <>
-                    <Row className="mt-20 mb-30 cls-attention-row">
-
-                      <Col className="fs-12 cls-bg-arrow f-sbold" span={3}>
-                        <Text className="cls-blue">{item?.flightNumber}</Text>
-                      </Col>
-                      <Col className="fs-12" span={3}>
-                        {item?.sector}
-                      </Col>
-                      <Col className="fs-12" span={4}>
-                        {item?.stdDeparture?.split(" ")[1] as string},{" "}
-                        {getDynamicDate(item?.stdDeparture?.split(" ")[0]) as string}
-                      </Col>
-                      <Col className="fs-12" span={3}>
-                        {item?.etdDeparture}
-                        {item?.nextDayArrival && <Text className="cls-next-day fs-11 f-reg">{item?.nextDayArrival}</Text>}
-                      </Col>
-                      <Col className="fs-12" span={3}>
-                        {item?.pnr.split(" ")[0]}
-                        <span className="cls-lightgray">
-                          {" "}
-                          {split_pnr(item?.pnr) as any}
-                        </span>
-                      </Col>
-                      <Col className="fs-12" span={3}>
-                        {item?.passenger.split(" ")[0]}
-                        <span className="cls-lightgray">
-                          {" "}
-                          {split_pnr(item?.passenger) as any}
-                        </span>
-                      </Col>
-                      <Col className="fs-12 cls-green" span={2}>
-                        {item?.status}
-                      </Col>
-                      <Col className="fs-12 cls-blue cls-action" span={3}>
-                        <span className="fs-10 cls-duration">
-                          {item?.duration}
-                        </span>
-                        <AntdTooltip
-                          title={t("click_reassign")}
-                        >
-                          <Text 
-                            className="pointer cls-blue cls-action fs-12 f-reg"
-                            onClick={() => redirect("adhoc")}
-                          >
-                            {item?.action}
-                          </Text>
-                        </AntdTooltip>
-                      </Col>
-                    </Row>
-                  </>
-                ))} */}
+                
 
                 <TableDisplay
                   data={attentionRowData.map((data: any) => {
