@@ -1,0 +1,783 @@
+{
+  "default": {
+    "global": {},
+    "component": {
+      "Table": {
+        "headerColor": "#979BAC",
+        "cellFontSize": 12
+      },
+      "Button": {
+        "borderRadius": 4,
+        "borderRadiusLG": 4,
+        "borderRadiusSM": 4,
+        "controlHeight": 32,
+        "colorLink": "#676767",
+        "colorLinkActive": "#676767",
+        "colorLinkHover": "#676767",
+        "colorPrimaryActive": "#133769",
+        "colorPrimary": "#fff",
+        "colorPrimaryHover": "#fff",
+        "colorBgTextActive": "#fff",
+        "colorTextLightSolid": "#fff",
+        "colorPrimaryBorder": "#133769",
+        "defaultBg": "transparent",
+        "defaultHoverBg": "transparent",
+        "defaultBorderColor": "#133769",
+        "defaultColor": "#133769",
+        "defaultHoverBorderColor": "#133769",
+        "defaultHoverColor": "#133769"
+      },
+      "Typography": {
+        "colorTextHeading": "#133769",
+        "titleMarginBottom": "0",
+        "lineHeightHeading1": "1.5",
+        "colorError": "#F55",
+        "colorPrimary": "#133769",
+        "colorSuccess": "#35B057",
+        "colorWarning": "#E68031",
+        "colorText": "#000"
+      },
+      "Input": {
+        "borderRadius": 4,
+        "borderRadiusLG": 4,
+        "borderRadiusSM": 4,
+        "addonBg": "#fff"
+      },
+      "Carousel": {
+        "colorBgContainer": "#000"
+      },
+      "Menu": {
+        "itemSelectedBg": "#133769",
+        "itemSelectedColor": "#fff",
+        "itemColor": "#133769",
+        "itemHoverBg": "#133769",
+        "itemHoverColor": "#fff"
+      },
+      "Radio": {
+        "buttonSolidCheckedBg": "#133769",
+        "buttonSolidCheckedHoverBg": "#133769",
+        "buttonBg": "#E8EFF7",
+        "buttonColor": "#565960",
+        "colorPrimaryHover": "#565960",
+        "colorPrimaryActive": "#565960",
+        "colorPrimary": "#0C28A8"
+      },
+      "Pagination": {
+        "colorPrimary": "#133769",
+        "colorText": "#133769",
+        "colorTextDisabled": "#133769"
+      },
+      "Checkbox": {
+        "colorPrimary": "#133769",
+        "colorPrimaryBorder": "#133769",
+        "colorPrimaryHover": "#133769"
+      },
+      "Notification": {
+        "lineHeightLG": "1",
+        "lineHeight": "1"
+      },
+      "Switch": {
+        "fontSizeSM": 17,
+        "trackPadding": -2.5,
+        "trackMinWidth": 40,
+        "trackHeight": 15,
+        "handleSize": 20,
+        "colorPrimary": "#133769",
+        "colorPrimaryHover": "#133769"
+      },
+      "Layout": {
+        "bodyBg": "#F8F9FB",
+        "headerBg": "#fff"
+      },
+      "Upload": {
+        "colorFillAlter": "#F6FAFF"
+      },
+      "Tabs": {
+        "itemSelectedColor": "#133769",
+        "itemActiveColor": "#133769",
+        "inkBarColor": "#133769",
+        "itemHoverColor": "#133769",
+        "itemColor": "#666666"
+      },
+      "Breadcrumb": {
+        "itemColor": "#1886d9",
+        "linkColor": "#1886d9",
+        "linkHoverColor": "#1886d9",
+        "lastItemColor": "#666",
+        "separatorColor": "#666"
+      },
+      "Select": {
+        "colorTextQuaternary": "rgb(12,40,168)"
+      }
+    },
+    "token": {
+      "fontFamily": "inter-regular"
+    },
+    "custom": {
+      "--t-primary":"#133769",
+      "--t-primary-bg":"#133769",
+      "--t-tertiary": "#F8B133",
+      "--t-secondary": "linear-gradient(90deg, #F8B133 -35.02%, #D22635 108.51%)",
+      "--t-blue-lighter": "#1A63C7",
+      "--t-blue-lighter-bg": "#1A63C7",
+      "--t-blue-light":"#E9F3FB",
+      "--t-blue-lightest":"#1886d9",
+      "--t-grey-lightest": "#e2e2e2",
+      "--t-grey-lighter": "#eff2f9",
+      "--t-grey-light": "#eef1f8",
+      "--t-grey-dark":"#333",
+      "--t-pink-light":"#FFF0F4",
+      "--t-red-light": "#FF5555",
+      "--t-icon-white":"#fff",
+      "--t-text-black":"#000",
+      "--t-text-white":"#fff",
+      "--t-text-grey-lightest":"#565960",
+      "--t-text-grey-light":"#afafaf",
+      "--t-text-grey-lighter":"#666",
+      "--t-text-grey-lighter-bg":"#666",
+      "--t-text-grey-dark":"#141414",
+      "--t-text-grey-dark-bg":"#141414",
+      "--t-text-blue-lightest":"#0C28A8",
+      "--t-text-blue-lighter":"#646883",
+      "--t-text-blue-light":"#6F8EB9",
+      "--t-white-bg": "#fff",
+      "--t-black-bg": "#000",
+      "--t-container-bg": "#f9f9f9",
+      "--t-border-blue-lightest":"#9AACC6",
+      "--t-border-blue-light":"#74bce1",
+      "--t-success": "#35B057",
+      "--t-green-light": "#38BB2C",
+      "--t-green-lighter":"#2D843F",
+      "--t-orange-light": "#FF8C22",
+      "--t-orange-lighter":"#CDA619",
+      "--t-orange-lightest":"#E56B34",
+      "--t-orange-dark":"#E68031",
+      "--t-brown-light":"#7e4a00",
+      "--t-transparent": "transparent",
+      "--t-scroll-border-color": "none",
+      "--t-btn-primary-background-color": "linear-gradient(90deg, #F8B133 -35.02%, #D22635 108.51%)",
+      "--t-btn-primary-inverted-background-color": "linear-gradient(270.31deg, #F8B133 -12.78%, #D22635 120.8%)",
+      "--t-header-boxshadow": "rgba(0, 0, 0, 0.10)",
+      "--t-header-accessiblity-link": "#00A7FF",
+      "--t-login-input-color": "#4F4F4F",
+      "--t-accessibility-gradient": "url(#paint0_linear_423_13078)",
+      "--t-image-greyScale": "0%",
+      "--t-policy-drag-card-border-color": "none",
+      "--t-viewPnr-cancel-modal-boxshadow": "-5px -4px 28px rgba(0, 0, 0, 0.11)",
+      "--t-search-flight-modify-collapse-datepicker-bg": "#1A447F",
+      "--t-search-flight-modify-collapse-datepicker-bdr": "#3865A3",
+      "--t-theme-selector-bg": "#ccd5fe"
+    },
+    "algorithm": "light"
+  },
+  "dark": {
+    "global": {},
+    "component": {
+      "Table": {
+        "headerColor": "#979BAC",
+        "cellFontSize": 12
+      },
+      "Button": {
+        "colorLink": "#676767",
+        "colorLinkActive": "#676767",
+        "colorLinkHover": "#fff"
+      },
+      "Input": {
+        "borderRadius": 4,
+        "borderRadiusLG": 4,
+        "borderRadiusSM": 4
+      },
+      "Typography": {
+        "colorTextHeading": "#fff",
+        "titleMarginBottom": "0",
+        "lineHeightHeading1": "1.5",
+        "colorError": "#dc4148",
+        "colorPrimary": "#133769",
+        "colorSuccess": "#2E8540",
+        "colorWarning": "#7E4A00",
+        "colorText": "#fff"
+      },
+      "Carousel": {
+        "colorBgContainer": "#141414"
+      },
+      "Pagination": {
+        "colorPrimary": "#fff",
+        "colorText": "#fff",
+        "colorTextDisabled": "#ebebeb"
+      },
+      "Checkbox": {
+        "colorPrimary": "#133769",
+        "colorPrimaryBorder": "#133769",
+        "colorPrimaryHover": "#133769"
+      },
+      "Menu": {
+        "itemSelectedBg": "#133769",
+        "itemSelectedColor": "#133769",
+        "itemColor": "#fff",
+        "itemHoverColor": "#fff"
+      },
+      "Switch": {
+        "fontSizeSM": 17,
+        "trackPadding": -3,
+        "trackMinWidth": 40,
+        "trackHeight": 15,
+        "handleSize": 20,
+        "colorPrimary": "#133769",
+        "colorPrimaryHover": "#133769"
+      },
+      "Tabs": {
+        "itemSelectedColor": "#F28132",
+        "itemActiveColor": "#F28132",
+        "inkBarColor": "#F28132",
+        "itemHoverColor": "#133769",
+        "itemColor": "#666666"
+      },
+      "Breadcrumb": {
+        "itemColor": "#fff",
+        "linkColor": "#fff",
+        "linkHoverColor": "#fff",
+        "lastItemColor": "#666",
+        "separatorColor": "#666"
+      },
+      "Select": {
+        "colorTextQuaternary": "rgb(12,40,168)"
+      }
+    },
+    "custom": {
+      "--t-scroll-border-color": "none",
+      "--t-primary":"#133769",
+      "--t-primary-bg":"#133769",
+      "--t-secondary": "linear-gradient(90deg, #F8B133 -35.02%, #D22635 108.51%)",
+      "--t-tertiary": "#fc496a",
+      "--t-header-boxshadow": "rgba(0, 0, 0, 0.10)",
+      "--t-header-accessiblity-link": "#fff",
+      "--t-btn-primary-background-color": "linear-gradient(90deg, #F8B133 -35.02%, #D22635 108.51%)",
+      "--t-btn-primary-inverted-background-color": "linear-gradient(270.31deg, #F8B133 -12.78%, #D22635 120.8%)",
+      "--t-grey-dark": "#fff",
+      "--t-blue-lightest":"#1886d9",
+      "--t-grey-lighter": "#eff2f9",
+      "--t-text-grey-dark":"#141414",
+      "--t-text-grey-dark-bg":"#141414",
+      "--t-text-white":"#fff",
+      "--t-icon-white": "#fff",
+      "--t-success": "#1245C8",
+      "--t-red-light": "#895AEF",
+      "--t-container-bg": "#000",
+      "--t-grey-light": "#000",
+      "--t-pink-light": "#FFF0F4",
+      "--t-blue-lighter-bg":"#1A63C7",
+      "--t-theme-selector-bg": "#ccd5fe",
+      "--t-login-input-color": "#fff",
+      "--t-white-bg": "#000",
+      "--t-black-bg": "#fff",
+      "--t-grey-lightest": "#333",
+      "--t-text-black": "#fff",
+      "--t-text-grey-lightest": "#fff",
+      "--t-green-light": "#38BB2C",
+      "--t-orange-light": "#FF8C22",
+      "--t-transparent": "#000",
+      "--t-blue-light": "#000",
+      "--t-text-grey-light": "#afafaf",
+      "--t-text-blue-lightest": "#0C28A8",
+      "--t-text-grey-lighter": "#666",
+      "--t-text-grey-lighter-bg": "#666",
+      "--t-green-lighter": "#2D843F",
+      "--t-orange-lighter": "#CDA619",
+      "--t-orange-lightest": "#E56B34",
+      "--t-accessibility-gradient": "url(#paint0_linear_423_13078)",
+      "--t-image-greyScale": "0%",
+      "--t-border-blue-lightest": "#9AACC6",
+      "--t-policy-drag-card-border-color": "#303030",
+      "--t-orange-dark": "#E68031",
+      "--t-brown-light": "#7e4a00",
+      "--t-border-blue-light": "#fff",
+      "--t-viewPnr-cancel-modal-boxshadow": "-5px -4px 28px rgb(169 164 164 / 11%)",
+      "--t-text-blue-lighter": "#646883",
+      "--t-search-flight-modify-collapse-datepicker-bg": "#1A447F",
+      "--t-search-flight-modify-collapse-datepicker-bdr": "#3865A3",
+      "--t-text-blue-light": "#6F8EB9"
+    },
+    "algorithm": "dark"
+  },
+  "BW": {
+    "global": {
+      "colorPrimary": "#fff",
+      "colorInfo": "#fff",
+      "colorSuccess": "#fff",
+      "colorWarning": "#fff",
+      "colorError": "#fff",
+      "colorText": "#fff",
+      "colorBorder": "#fff",
+      "colorBgContainer": "#141414",
+      "colorBgElevated": "#141414",
+      "colorTextPlaceholder": "#ffffff73"
+    },
+    "component": {
+      "Pagination": {
+        "colorText": "#fff",
+        "colorTextDisabled": "rgba(255, 255, 255, 0.6)"
+      },
+      "Button": {
+        "borderRadius": 4,
+        "borderRadiusLG": 4,
+        "borderRadiusSM": 4,
+        "colorLink": "#fff",
+        "colorLinkActive": "rgba(255, 255, 255, 0.6)",
+        "colorLinkHover": "rgba(255, 255, 255, 0.6)",
+        "defaultColor": "#fff",
+        "defaultBg": "transparent",
+        "defaultHoverBg": "transparent",
+        "defaultBorderColor": "#fff",
+        "defaultHoverColor": "#fff",
+        "defaultHoverBorderColor": "#fff",
+        "primaryColor": "#000",
+        "colorPrimaryHover": "000"
+      },
+      "Table": {
+        "rowSelectedBg": "#666"
+      },
+      "Typography": {
+        "colorTextHeading": "#fff",
+        "colorText": "#fff",
+        "colorTextDisabled": "#ffffff40",
+        "colorTextDescription": "#fff"
+      },
+      "Tabs": {
+        "inkBarColor": "#fff",
+        "itemSelectedColor": "#fff",
+        "itemHoverColor": "#fff",
+        "itemColor": "rgba(255, 255, 255, 0.5)",
+        "colorBorderSecondary": "rgba(255, 255, 255, 0.5)",
+        "itemActiveColor": "#fff"
+      },
+      "Select": {
+        "optionSelectedBg": "#fff",
+        "optionSelectedColor": "#141414",
+        "colorPrimaryHover": "#fff",
+        "colorTextQuaternary": "rgb(12,40,168)"
+      },
+      "Menu": {
+        "itemSelectedBg": "#fff",
+        "itemSelectedColor": "#000",
+        "itemColor": "#fff"
+      },
+      "Input": {
+        "colorTextPlaceholder": "#ffffff73",
+        "borderRadius": 4,
+        "borderRadiusLG": 4,
+        "borderRadiusSM": 4
+      },
+      "Switch": {
+        "fontSizeSM": 17,
+        "trackPadding": -3,
+        "trackMinWidth": 40,
+        "trackHeight": 15,
+        "handleSize": 20
+      },
+      "Breadcrumb": {
+        "itemColor": "#fff",
+        "linkColor": "#fff",
+        "linkHoverColor": "#fff",
+        "lastItemColor": "#666",
+        "separatorColor": "#666"
+      }
+    },
+    "token": {
+      "colorTextLightSolid": "#000"
+    },
+    "custom": {
+      "--t-scroll-border-color": "none",
+      "--t-secondary": "#333",
+      "--t-tertiary": "#fff",
+      "--t-icon-white": "#000",
+      "--t-grey-dark": "#fff",
+      "--t-header-boxshadow": "rgba(233, 224, 224, 0.20)",
+      "--t-btn-primary-background-color": "#fff",
+      "--t-btn-primary-inverted-background-color": "#fff",
+      "--t-header-accessiblity-link": "#fff",
+      "--t-grey-light": "#000",
+      "--t-container-bg": "#222",
+      "--t-success": "#fff",
+      "--t-blue-lighter": "#fff",
+      "--t-blue-lighter-bg": "#fff",
+      "--t-red-light": "#bebebe",
+      "--t-pink-light": "#000",
+      "--t-black-bg": "#fff",
+      "--t-grey-lightest": "#333",
+      "--t-text-black": "#fff",
+      "--t-text-grey-lightest": "#fff",
+      "--t-green-light": "#fff",
+      "--t-orange-light": "#fff",
+      "--t-transparent": "#000",
+      "--t-blue-light": "#000",
+      "--t-text-grey-light": "#fff",
+      "--t-text-blue-lightest": "#fff",
+      "--t-text-grey-lighter": "#fff",
+      "--t-text-grey-lighter-bg": "#fff",
+      "--t-green-lighter": "#fff",
+      "--t-orange-lighter": "#fff",
+      "--t-white-bg": "#000",
+      "--t-orange-lightest": "#fff",
+      "--t-accessibility-gradient": "#fff",
+      "--t-image-greyScale": "100%",
+      "--t-border-blue-lightest": "#fff",
+      "--t-policy-drag-card-border-color": "#303030",
+      "--t-policy-condition-color": "#fff",
+      "--t-orange-dark": "#666",
+      "--t-brown-light": "#fff",
+      "--t-border-blue-light": "#fff",
+      "--t-viewPnr-cancel-modal-boxshadow": "-5px -4px 28px rgb(169 164 164 / 11%)",
+      "--t-text-blue-lighter": "#fff",
+      "--t-search-flight-modify-collapse-datepicker-bg": "#000",
+      "--t-search-flight-modify-collapse-datepicker-bdr": "#fff",
+      "--t-text-blue-light": "#000",
+      "--t-primary":"#fff",
+      "--t-primary-bg":"#fff",
+      "--t-text-grey-dark":"#141414",
+      "--t-text-grey-dark-bg":"#fff",
+      "--t-text-white":"#141414",
+      "--t-login-input-color":"#4F4F4F",
+      "--t-theme-selector-bg":"#ccd5fe",
+      "--t-grey-lighter":"#141414"
+    },
+    "algorithm": "dark"
+  },
+  "BY": {
+    "global": {
+      "colorPrimary": "#141414",
+      "colorInfo": "#FBEB3F",
+      "colorSuccess": "#FBEB3F",
+      "colorWarning": "#FBEB3F",
+      "colorError": "#FBEB3F",
+      "colorText": "#FBEB3F",
+      "colorBgContainer": "#141414",
+      "colorbgLayout": "#FBEB3F",
+      "colorBgElevated": "#141414",
+      "colorBorder": "#FBEB3F",
+      "colorTextPlaceholder": "rgba(251, 235, 63, 0.25)",
+      "colorBgBase": "#FBEB3F",
+      "colorTextLightSolid": "#000"
+    },
+    "component": {
+      "Pagination": {
+        "colorText": "#141414",
+        "colorTextDisabled": "rgba(0, 0, 0, 0.6)",
+        "colorPrimary": "#FBEB3F"
+      },
+      "Button": {
+        "borderRadius": 4,
+        "borderRadiusLG": 4,
+        "borderRadiusSM": 4,
+        "colorLink": "#FBEB3F",
+        "colorLinkActive": "rgba(251, 251, 63, 0.6)",
+        "colorLinkHover": "rgba(251, 251, 63, 0.6)",
+        "defaultColor": "#FBEB3F",
+        "defaultBg": "transparent",
+        "defaultHoverBg": "transparent",
+        "defaultBorderColor": "#FBEB3F",
+        "defaultHoverColor": "#FBEB3F",
+        "defaultHoverBorderColor": "#FBEB3F"
+      },
+      "Table": {
+        "rowSelectedBg": "#322f0d",
+        "colorTextHeading":"#FBEB3F"
+      },
+      "Input": {
+        "colorBgContainer": "#141414",
+        "activeBorderColor": "#FBEB3F",
+        "hoverBorderColor": "#FBEB3F"
+      },
+      "Typography": {
+        "colorTextHeading": "#FBEB3F",
+        "colorText": "#FBEB3F",
+        "colorTextDisabled": "#FBEB3F40",
+        "colorTextDescription": "#FBEB3FBF",
+        "colorSuccess": "#FBEB3F",
+        "colorWarning": "#FBEB3F",
+        "colorError": "#FBEB3F"
+      },
+      "Tabs": {
+        "inkBarColor": "#FBEB3F",
+        "itemSelectedColor": "#FBEB3F",
+        "itemHoverColor": "#FBEB3F",
+        "colorBorderSecondary": "rgba(251, 235, 63, 0.5)",
+        "itemColor": "#FBEB3F40",
+        "colorTextDisabled": "#FBEB3F40"
+      },
+      "Select": {
+        "optionSelectedBg": "#FBEB3F",
+        "optionSelectedColor": "#141414",
+        "colorPrimaryHover": "#FBEB3F",
+        "colorTextQuaternary": "rgb(12,40,168)"
+      },
+      "Menu": {
+        "itemSelectedBg": "#FBEB3F",
+        "itemSelectedColor": "#000",
+        "itemColor": "#FBEB3F"
+      },
+      "Switch": {
+        "fontSizeSM": 17,
+        "trackPadding": -3,
+        "trackMinWidth": 40,
+        "trackHeight": 15,
+        "handleSize": 20
+      },
+      "Radio": {
+        "buttonColor": "#000",
+        "colorPrimaryHover": "#000"
+      },
+      "Breadcrumb": {
+        "itemColor": "#000",
+        "linkColor": "#FBEB3F",
+        "linkHoverColor": "#000",
+        "lastItemColor": "#FBEB3F",
+        "separatorColor": "#141414"
+      }
+    },
+    "custom": {
+      "--t-scroll-border-color": "none",
+      "--t-secondary": "#333",
+      "--t-tertiary": "#FBEB3F",
+      "--t-icon-white": "#000",
+      "--t-grey-dark": "#FBEB3F",
+      "--t-header-boxshadow": "rgba(233, 224, 224, 0.20)",
+      "--t-btn-primary-background-color": "#FBEB3F",
+      "--t-btn-primary-inverted-background-color": "#FBEB3F",
+      "--t-header-accessiblity-link": "#FBEB3F",
+      "--t-grey-light": "#000",
+      "--t-container-bg": "#222",
+      "--t-success": "#FBEB3F",
+      "--t-blue-lighter": "#FBEB3F",
+      "--t-blue-lighter-bg": "#FBEB3F",
+      "--t-red-light": "#FBEB3F",
+      "--t-pink-light": "#000",
+      "--t-black-bg": "#FBEB3F",
+      "--t-grey-lightest": "#333",
+      "--t-text-black": "#FBEB3F",
+      "--t-text-grey-lightest": "#FBEB3F",
+      "--t-green-light": "#FBEB3F",
+      "--t-orange-light": "#FBEB3F",
+      "--t-transparent": "#000",
+      "--t-blue-light": "#000",
+      "--t-text-grey-light": "#FBEB3F",
+      "--t-text-blue-lightest": "#FBEB3F",
+      "--t-text-grey-lighter": "#FBEB3F",
+      "--t-text-grey-lighter-bg": "#FBEB3F",
+      "--t-green-lighter": "#FBEB3F",
+      "--t-orange-lighter": "#FBEB3F",
+      "--t-white-bg": "#000",
+      "--t-orange-lightest": "#FBEB3F",
+      "--t-accessibility-gradient": "#FBEB3F",
+      "--t-image-greyScale": "100%",
+      "--t-border-blue-lightest": "#FBEB3F",
+      "--t-policy-drag-card-border-color": "#303030",
+      "--t-policy-condition-color": "#FBEB3F",
+      "--t-orange-dark": "#666",
+      "--t-brown-light": "#FBEB3F",
+      "--t-border-blue-light": "#FBEB3F",
+      "--t-viewPnr-cancel-modal-boxshadow": "-5px -4px 28px rgb(169 164 164 / 11%)",
+      "--t-text-blue-lighter": "#FBEB3F",
+      "--t-search-flight-modify-collapse-datepicker-bg": "#000",
+      "--t-search-flight-modify-collapse-datepicker-bdr": "#FBEB3F",
+      "--t-text-blue-light": "#000",
+      "--t-primary": "#FBEB3F",
+      "--t-primary-bg":"#FBEB3F",
+      "--t-text-grey-dark": "#141414",
+      "--t-text-grey-dark-bg": "#FBEB3F",
+      "--t-text-white": "#141414",
+      "--t-login-input-color": "#4F4F4F",
+      "--t-theme-selector-bg": "#ccd5fe"
+    },
+    "token": {
+      "colorTextLightSolid": "#000",
+      "colorError":"#FBEB3F",
+      "colorText":"#FBEB3F"
+    },
+    "algorithm": "dark"
+  },
+  "YB": {
+    "global": {
+      "colorPrimary": "#141414",
+      "colorInfo": "#FBEB3F",
+      "colorSuccess": "#141414",
+      "colorWarning": "#141414",
+      "colorError": "#141414",
+      "colorText": "#141414",
+      "colorBgContainer": "#FBEB3F",
+      "colorBgElevated": "#FBEB3F",
+      "colorbgLayout": "#141414",
+      "colorBorder": "#141414",
+      "colorTextPlaceholder": "rgba(0, 0, 0, 0.25)",
+      "colorBgBase": "#141414",
+      "colorTextLightSolid": "#FBEB3F"
+    },
+    "component": {
+      "Pagination": {
+        "colorPrimary": "#141414",
+        "colorText": "#FBEB3F",
+        "colorTextDisabled": "#FBEB3F"
+      },
+      "Button": {
+        "borderRadius": 4,
+        "borderRadiusLG": 4,
+        "borderRadiusSM": 4,
+        "colorLink": "#FBEB3F",
+        "colorLinkActive": "rgba(251, 251, 63, 0.6)",
+        "colorLinkHover": "rgba(251, 251, 63, 0.6)",
+        "defaultColor": "#000",
+        "defaultBg": "transparent",
+        "defaultHoverBg": "transparent",
+        "defaultBorderColor": "#FBEB3F",
+        "defaultHoverColor": "#FBEB3F",
+        "defaultHoverBorderColor": "#FBEB3F",
+        "colorPrimaryHover": "#FBEB3F"
+      },
+      "Table": {
+        "rowSelectedBg": "#322f0d",
+        "colorTextHeading":"#000",
+        "colorBgContainer": "rgb(251,235,63)",
+        "colorText": "rgb(0,0,0)",
+        "rowHoverBg": "#FBEB3F"
+      },
+      "Typography": {
+        "colorTextHeading": "#FBEB3F",
+        "colorText": "#000",
+        "colorTextDisabled": "#000",
+        "colorTextDescription": "#000",
+        "colorSuccess": "#FBEB3F",
+        "colorWarning": "#000",
+        "colorError": "#FF5555"
+      },
+      "Card": {
+        "colorText": "#141414"
+      },
+      "Input": {
+        "colorBgContainer": "#FBEB3F",
+        "activeBorderColor": "#141414",
+        "hoverBorderColor": "#141414"
+      },
+      "Tabs": {
+        "inkBarColor": "#141414",
+        "itemSelectedColor": "#141414",
+        "itemHoverColor": "#141414",
+        "colorBorderSecondary": "rgba(0, 0, 0, 0.5)",
+        "itemColor": "#00000040",
+        "colorTextDisabled": "#00000040"
+      },
+      "Select": {
+        "optionSelectedBg": "#141414",
+        "optionSelectedColor": "#FBEB3F",
+        "colorPrimaryHover": "#141414",
+        "colorTextQuaternary": "rgb(12,40,168)"
+      },
+      "Menu": {
+        "itemSelectedBg": "#000",
+        "itemSelectedColor": "#000",
+        "itemColor": "#000",
+        "itemHoverColor": "#FBEB3F"
+      },
+      "Switch": {
+        "fontSizeSM": 17,
+        "trackPadding": -3,
+        "trackMinWidth": 40,
+        "trackHeight": 15,
+        "handleSize": 20,
+        "colorPrimary": "#FBEB3F",
+        "colorTextQuaternary": "#FBEB3F",
+        "colorPrimaryHover": "#FBEB3F"
+      },
+      "Radio": {
+        "buttonColor": "#FBEB3F",
+        "colorPrimaryHover": "#FBEB3F"
+      },
+      "Breadcrumb": {
+        "itemColor": "#FBEB3F80",
+        "lastItemColor": "#FBEB3F80",
+        "linkColor": "#FBEB3F",
+        "linkHoverColor": "#FBEB3F",
+        "separatorColor": "#FBEB3F80"
+      },
+      "DatePicker": {
+        "colorIcon": "#000",
+        "colorTextDisabled": "#999",
+        "cellBgDisabled": "#8f898914"
+      },
+      "Form": {
+        "labelColor": "rgb(0,0,0)",
+        "colorBorder": "rgb(0,0,0)"
+      }
+    },
+    "token":{
+      "colorBgContainer":"#FBEB3F",
+      "colorError":"#F5222D",
+      "colorText":"#000",
+      "colorBgElevated":"#FBEB3F",
+      "colorTextHeading":"#FBEB3F"
+    },
+    "custom": {
+      "--t-scroll-border-color": "#FBEB3F",
+      "--t-secondary": "#141414",
+      "--t-primary":"#000",
+      "--t-primary-bg":"#FBEB3F",
+      "--t-tertiary": "#FBEB3F",
+      "--t-header-boxshadow": "rgba(0, 0, 0, 0.10)",
+      "--t-grey-dark": "#000",
+      "--t-btn-primary-background-color": "#FBEB3F",
+      "--t-btn-primary-inverted-background-color": "#141414",
+      "--t-header-accessiblity-link": "#141414",
+      "--t-icon-white": "#FBEB3F",
+      "--t-blue-lighter": "#000",
+      "--t-blue-lighter-bg":"#FBEB3F",
+      "--t-grey-light": "transparent",
+      "--t-container-bg": "transparent",
+      "--t-success": "#141414",
+      "--t-red-light": "#808080",
+      "--t-pink-light": "#000",
+      "--t-black-bg": "#FBEB3F",
+      "--t-grey-lightest": "#222",
+      "--t-text-black": "#000",
+      "--t-text-grey-lightest": "#000",
+      "--t-green-light": "#FBEB3F",
+      "--t-orange-light": "#FBEB3F",
+      "--t-transparent": "#FBEB3F",
+      "--t-blue-light": "#000",
+      "--t-text-grey-light": "#000",
+      "--t-text-blue-lightest": "#000",
+      "--t-text-grey-lighter": "#000",
+      "--t-text-grey-lighter-bg":"#FBEB3F",
+      "--t-green-lighter": "#000",
+      "--t-orange-lighter": "#FBEB3F",
+      "--t-white-bg": "#FBEB3F",
+      "--t-orange-lightest": "#000",
+      "--t-accessibility-gradient": "#000",
+      "--t-image-greyScale": "0%",
+      "--t-border-blue-lightest": "#000",
+      "--t-policy-drag-card-border-color": "#000",
+      "--t-policy-condition-color": "#FBEB3F",
+      "--t-orange-dark": "#000",
+      "--t-brown-light": "#FBEB3F",
+      "--t-border-blue-light": "#000",
+      "--t-viewPnr-cancel-modal-boxshadow": "-5px -4px 28px rgb(169 164 164 / 11%)",
+      "--t-text-blue-lighter": "#000",
+      "--t-search-flight-modify-collapse-datepicker-bg": "#000",
+      "--t-search-flight-modify-collapse-datepicker-bdr": "#FBEB3F",
+      "--t-text-blue-light": "#FBEB3F",
+      "--t-blue-lightest": "#1886d9",
+      "--t-text-white": "#000",
+      "--t-text-grey-dark": "#000",
+      "--t-text-grey-dark-bg": "#FBEB3F",
+      "--t-login-input-color": "#4F4F4F",
+      "--t-theme-selector-bg": "#ccd5fe",
+      "--t-grey-lighter":"#FBEB3F",
+      "--t-white-text":"#FBEB3F"
+    },
+    "algorithm": "dark"
+  },
+  "fonts": {
+    "--font-light": "inter-light",
+    "--font-regular": "inter-regular",
+    "--font-medium": "inter-medium",
+    "--font-semibold": "inter-semibold",
+    "--font-bold": "inter-bold"
+  }
+}

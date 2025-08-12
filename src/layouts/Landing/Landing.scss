@@ -1,0 +1,99 @@
+.cls-landingLayout {
+    min-height: 100vh;
+    height: 100%;
+    background-color: var(--t-white-bg);
+
+    .cls-landingContainer {
+        width: 100%;
+        background: linear-gradient(218.95deg,
+                rgba(11, 44, 90, 0.78) 0%,
+                rgba(19, 55, 105, 0.78) 99.01%),
+            url(../../assets/images/common/landing_bg.webp);
+        height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cls-loginContainer {
+        min-height: calc(100vh - 150px);
+    }
+
+    .cls-description-heading {
+        color: var(--t-text-white);
+        font-size: 24px;
+        line-height: 39px;
+        margin-block: 15px;
+    }
+
+    .cls-ulPoints {
+        line-height: 45px;
+        font-size: 21px;
+    }
+
+    .cls-description-points {
+        font-family: var(--font-regular);
+        color: var(--t-text-white);
+        margin-left: 35px;
+        max-width: 100%;
+    }
+
+    .cls-rightHeader {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        & .cls-headerContent {
+            display: flex;
+            padding: 15px;
+            column-gap: 20px;
+        }
+    }
+
+    .cls-mobLogo {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .cls-landingLayout {
+        .cls-landingContainer, .cls-languageContainer {
+            display: none;
+        }
+
+        .cls-header {
+            .container {
+                padding-inline: 15px;
+            }
+        }
+
+        .cls-loginContainer {
+            margin-block-end: 30px;
+            .cls-headerContent {
+                display: none;
+            }
+        }
+
+        .cls-mobLogo {
+            display: flex;
+            justify-content: center;
+            margin-block-end: 35px;
+            img {
+                height: 42px;
+            }
+        }
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    .cls-landingLayout {
+        .cls-ulPoints {
+            font-size: 14px;
+            li {
+                line-height: 2;
+            }
+        }
+    }
+}

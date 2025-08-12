@@ -1,0 +1,26 @@
+{
+    "responseCode": 0,
+    "response": {
+      "Message": "Success",
+      "data": [
+        {
+          "name": "Adhoc disruption",
+          "type": "flights",
+          "total": "15",
+          "Pending": "07",
+          "total_pax": "42",
+          "affected_pax": "27",
+          "progress": 40
+        },
+        {
+          "name": "Pre-planned disruption",
+          "type": "PNRs",
+          "total": "32",
+          "Pending": "18",
+          "total_pax": "66",
+          "affected_pax": "54",
+          "progress": 50
+        }
+      ]
+    }
+  }

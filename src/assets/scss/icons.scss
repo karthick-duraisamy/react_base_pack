@@ -1,0 +1,367 @@
+@font-face {
+  font-family: 'InfiIcons';
+  src: url('../fonts/infi_icons/infi-icons.eot?bwzliu');
+  src: url('../fonts/infi_icons/infi-icons.eot?bwzliu#iefix') format('embedded-opentype'),
+    url('../fonts/infi_icons/infi-icons.ttf?bwzliu') format('truetype'),
+    url('../fonts/infi_icons/infi-icons.woff?bwzliu') format('woff'),
+    url('../fonts/infi_icons/infi-icons.svg?bwzliu#InfiIcons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="Infi-"],
+[class*=" Infi-"] {
+  font-family: 'InfiIcons' !important;
+  /* To prevent issues with browser extensions that change fonts */
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  /* Better Font Rendering */
+  -moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering */
+}
+
+.Infi-01_Loudspeaker:before {
+  content: "\e900";
+}
+
+.Infi-02_Flight:before {
+  content: "\e901";
+}
+
+.Infi-03_Expand:before {
+  content: "\e902";
+}
+
+.Infi-04_DropdownArrow:before {
+  content: "\e903";
+}
+
+.Infi-05_Filter:before {
+  content: "\e904";
+}
+
+.Infi-06_DownArrow:before {
+  content: "\e905";
+}
+
+.Infi-07_Search:before {
+  content: "\e906";
+}
+
+.Infi-08_User:before {
+  content: "\e907";
+}
+
+.Infi-09_CloseIcon:before {
+  content: "\e908";
+}
+
+.Infi-10_ArrowRight:before {
+  content: "\e909";
+}
+
+.Infi-11_FilterMenu:before {
+  content: "\e90a";
+}
+
+.Infi-12_Edit:before {
+  content: "\e90b";
+}
+
+.Infi-13_Copy:before {
+  content: "\e90c";
+}
+
+.Infi-14_Reschedule:before {
+  content: "\e90d";
+}
+
+.Infi-15_Info:before {
+  content: "\e90e";
+}
+
+.Infi-16_DepartTime:before {
+  content: "\e90f";
+}
+
+.Infi-17_SixDot:before {
+  content: "\e910";
+}
+
+.Infi-18_FlightDepartDate:before {
+  content: "\e911";
+}
+
+.Infi-19_TodayDate:before {
+  content: "\e912";
+}
+
+.Infi-20_FlightStatus:before {
+  content: "\e913";
+}
+
+.Infi-21_FlightStops:before {
+  content: "\e914";
+}
+
+.Infi-22_CabinClass:before {
+  content: "\e915";
+}
+
+.Infi-23_TripCategory:before {
+  content: "\e916";
+}
+
+.Infi-24_GroupSize:before {
+  content: "\e917";
+}
+
+.Infi-25_SpecialServices:before {
+  content: "\e918";
+}
+
+.Infi-26_FareType:before {
+  content: "\e919";
+}
+
+.Infi-27_FlightType:before {
+  content: "\e91a";
+}
+
+.Infi-28_DragDrop:before {
+  content: "\e91b";
+}
+
+.Infi-29_FFPassenger:before {
+  content: "\e91c";
+}
+
+.Infi-30_Plus:before {
+  content: "\e91d";
+}
+
+.Infi-31_ThinCloseIcon:before {
+  content: "\e91e";
+}
+
+.Infi-32_Rebook:before {
+  content: "\e91f";
+}
+
+.Infi-33_Accept:before {
+  content: "\e920";
+}
+
+.Infi-34_Cancel:before {
+  content: "\e921";
+}
+
+.Infi-35_NotificationBell:before {
+  content: "\e922";
+}
+
+.Infi-36_FreeMeal:before {
+  content: "\e923";
+}
+
+.Infi-37_Voucher:before {
+  content: "\e924";
+}
+
+.Infi-38_Refund:before {
+  content: "\e925";
+}
+
+.Infi-39_FlightSkeleton:before {
+  content: "\e926";
+}
+
+.Infi-40_SendNotification:before {
+  content: "\e927";
+}
+
+.Infi-41_OnwardTo:before {
+  content: "\e928";
+}
+
+.Infi-42_SuccessIcon:before {
+  content: "\e929";
+}
+
+.Infi-43_Upload:before {
+  content: "\e92a";
+}
+
+.Infi-44_Adult:before {
+  content: "\e92b";
+}
+
+.Infi-45_Child:before {
+  content: "\e92c";
+}
+
+.Infi-46_Infant:before {
+  content: "\e92d";
+}
+
+.Infi-47_FlightStart:before {
+  content: "\e92e";
+}
+
+.Infi-48_EditFill:before {
+  content: "\e92f";
+}
+
+.Infi-49_AddSSR:before {
+  content: "\e930";
+}
+
+.Infi-50_AddSeat:before {
+  content: "\e931";
+}
+
+.Infi-51_Printer:before {
+  content: "\e932";
+}
+
+.Infi-52_Calender:before {
+  content: "\e933";
+}
+
+.Infi-53_InfantSeat:before {
+  content: "\e934";
+}
+
+.Infi-54_Meals:before {
+  content: "\e935";
+}
+
+.Infi-55_Restroom:before {
+  content: "\e936";
+}
+
+.Infi-56_SeatLite:before {
+  content: "\e937";
+}
+
+.Infi-57_BaggageLite:before {
+  content: "\e938";
+}
+
+.Infi-58_Baggage_5kg:before {
+  content: "\e939";
+}
+
+.Infi-59_Baggage_10kg:before {
+  content: "\e93a";
+}
+
+.Infi-60_Baggage_15kg:before {
+  content: "\e93b";
+}
+
+.Infi-61_Baggage_20kg:before {
+  content: "\e93c";
+}
+
+.Infi-62_Baggage_25kg:before {
+  content: "\e93d";
+}
+
+.Infi-63_Light:before {
+  content: "\e93e";
+}
+
+.Infi-64_Dark:before {
+  content: "\e93f";
+}
+
+.Infi-65_TableExpand:before {
+  content: "\e940";
+}
+
+.Infi-66_TableCollapse:before {
+  content: "\e941";
+}
+
+.Infi-67_Before6AM:before {
+  content: "\e942";
+}
+
+.Infi-68_MorningIcon:before {
+  content: "\e943";
+}
+
+.Infi-69_NoonIcon:before {
+  content: "\e944";
+}
+
+.Infi-70_NightIcon:before {
+  content: "\e945";
+}
+
+.Infi-71_Robot:before {
+  content: "\e946";
+}
+
+.Infi-72_DealStrip:before {
+  content: "\e947";
+}
+
+.Infi-73_InfoBold:before {
+  content: "\e948";
+}
+
+.Infi-74_FlightLanding:before {
+  content: "\e949";
+}
+
+.Infi-75_RespMenu:before {
+  content: "\e94a";
+}
+
+.Infi-76_Tick:before {
+  content: "\e94b";
+}
+
+.Infi-77_Garbage:before {
+  content: "\e94c";
+}
+
+.Infi-78_Reset:before {
+  content: "\e94d";
+}
+
+.Infi-79_Refresh:before {
+  content: "\e94e";
+}
+
+.Infi-80_BgArrow:before {
+  content: "\e94f";
+}
+
+.Infi-81_OpenEye:before {
+  content: "\e950";
+}
+
+.Infi-82_CloseMark:before {
+  content: "\e951";
+}
+
+.Infi-83_Trip:before {
+  content: "\e952";
+}
+
+.Infi-84_QRCode:before {
+  content: "\e953";
+}
+
+.Infi-85_Clone:before {
+  content: "\e954";
+}

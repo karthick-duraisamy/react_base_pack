@@ -1,0 +1,63 @@
+{
+  "responseCode": 0,
+  "response": {
+    "Message": "Success",
+    "data": {
+      "menu": [
+        {
+          "menu_code": "Dashboard",
+          "path": "/dashboard",
+          "icon_name": "FdDashboardIcon",
+          "subMenu": []
+        },
+        {
+          "menu_code": "Disruption List",
+          "path": "",
+          "icon_name": "FdDisruptionList",
+          "subMenu": [
+            {
+              "id": 20,
+              "menu_code": "Adhoc",
+              "parent_menu": "Disruption List",
+              "path": "/adhoc",
+              "icon_name": "FdAdhoc"
+            },
+            {
+              "id": 21,
+              "menu_code": "Pre-planned",
+              "parent_menu": "Disruption List",
+              "path": "/prePlanned",
+              "icon_name": "FdPreplanned"
+            }
+          ]
+        }
+      ],
+      "route": [
+        {
+          "route_id": 163,
+          "path": "/dashboard",
+          "layout": "HomeLayout",
+          "component": "Dashboard",
+          "default": 1,
+          "permission": ["all"]
+        },
+        {
+          "route_id": 100,
+          "path": "/adhoc",
+          "layout": "HomeLayout",
+          "component": "AdhocDisruptionList",
+          "default": 0,
+          "permission": ["all"]
+        },
+        {
+          "route_id": 89,
+          "path": "/prePlanned",
+          "layout": "HomeLayout",
+          "component": "PrePlannedDisruptionList",
+          "default": 0,
+          "permission": ["all"]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "airline_code": "VA",
+  "airline_title": "Voyager aid",
+  "accessibility_pos": "vertical",
+  "menu_position": "vertical",
+  "menu_mock_api": true,
+  "encryption_key": "voyagerAid",
+  "url_path_encryption": false,
+  "browser_storage_encryption": false,
+  "header_logo_placement" : "left",
+  "page_direction" : "left",
+  "date_format": "MMM DD, YYYY",
+  "currency": "USD",
+  "currency_symbol": "$",
+  "date_formatter": "%d-%M-%Y",
+  "language": [
+    {
+      "code": "en-US",
+      "text": "English",
+      "flag": "english"
+    },
+    {
+      "code": "hi-IN",
+      "text": "Hindi",
+      "flag": "hindi"
+    }
+  ],
+  "default_lang": "en-US",
+  "ads_banner": true,
+  "list_display_columns": 6,
+  "time_formatter": "%d %Y",
+  "date_time_formatter": "%d-%M-%Y %H:%i %A",
+  "time_format": {
+    "hour12": true,
+    "hour": "2-digit",
+    "minute": "2-digit"
+  },
+  "dayjs": {
+    "date_format": "D, MMM YYYY"
+  },
+  "site": {
+    "airline_code": "VA",
+    "currency": {
+      "code": "USD",
+      "symbol": "$"
+    },
+    "ads_banner": true,
+    "pnr_pax_split_count": 40,
+    "layout": {
+      "header_logo_placement": "left",
+      "page_direction": "left",
+      "position": "horizontal"
+    },
+    "language": {
+      "default": "en-US",
+      "available": [
+        {
+          "code": "en-US",
+          "text": "English",
+          "flag": "english"
+        },
+        {
+          "code": "hi-IN",
+          "text": "Hindi",
+          "flag": "hindi"
+        }
+      ]
+    },
+    "date_time_format": {
+      "date_format": "MMM DD, YYYY",
+      "time_formatter": "%d %Y",
+      "date_time_formatter": "%d-%M-%Y %H:%i %A",
+      "time_format": {
+        "hour12": true,
+        "hour": "2-digit",
+        "minute": "2-digit"
+      }
+    }
+  }
+}

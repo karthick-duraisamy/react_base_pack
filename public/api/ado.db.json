@@ -1,0 +1,1902 @@
+{
+  "unauthMenuRoutes": {
+    "responseCode": 0,
+    "response": {
+      "Message": "Success",
+      "data": {
+        "menu": [],
+        "route": [
+          {
+            "id": 1,
+            "path": "/planB",
+            "layout": "PlanBLayout",
+            "title": "Plan B",
+            "description": "Need to add",
+            "component": "PlanB"
+          },
+          {
+            "id": 2,
+            "path": "/viewPnrInfo",
+            "layout": "PlanBLayout",
+            "title": "View PNR Info",
+            "description": "Need to add",
+            "component": "ViewPnrInfo"
+          },
+          {
+            "id": 3,
+            "path": "/login",
+            "layout": "LandingLayout",
+            "title": "Login",
+            "description": "Need to add",
+            "component": "Login",
+            "default": true
+          },
+          {
+            "id": 4,
+            "path": "/forgot-password",
+            "layout": "LandingLayout",
+            "title": "Forgot Password",
+            "description": "Need to add",
+            "component": "ForgotPassword"
+          },
+          {
+            "id": 5,
+            "path": "/login-with-otp",
+            "layout": "LandingLayout",
+            "title": "Login with OTP",
+            "description": "Need to add",
+            "component": "LoginWithOTP"
+          },
+          {
+            "id": 6,
+            "path": "/reset-password",
+            "layout": "LandingLayout",
+            "title": "Reset Password",
+            "description": "Need to add",
+            "component": "ResetPassword"
+          }
+        ]
+      }
+    }
+  },
+  "authMenuRoutes": {
+    "responseCode": 0,
+    "response": {
+      "Message": "Success",
+      "data": {
+        "menu": [
+          {
+            "menu_code": "Dashboard",
+            "path": "/comingSoon",
+            "icon_name": "FdDashboardIcon",
+            "subMenu": []
+          },
+          {
+            "menu_code": "Ancillary Management",
+            "path": "",
+            "icon_name": "FdDisruptionList",
+            "subMenu": [
+              {
+                "id": 20,
+                "menu_code": "Add Ancillary",
+                "parent_menu": "Ancillary Management",
+                "path": "/ancillaryList",
+                "icon_name": "FdAdhoc"
+              },
+              {
+                "id": 21,
+                "menu_code": "Create Bundling",
+                "parent_menu": "Ancillary Management",
+                "path": "/bundlesList",
+                "icon_name": "FdPreplanned"
+              },
+              {
+                "id": 22,
+                "menu_code": "Policy Mapping",
+                "parent_menu": "Ancillary Management",
+                "path": "/policyList",
+                "icon_name": "FdRulesAndPolicy"
+              },
+              {
+                "id": 23,
+                "menu_code": "View request",
+                "parent_menu": "Ancillary Management",
+                "path": "/viewRequest",
+                "icon_name": "FdCustomReport"
+              }
+            ]
+          },
+          {
+            "menu_code": "New Request",
+            "path": "/comingSoon",
+            "icon_name": "FdRescheduleChanges"
+          },
+          {
+            "menu_code": "View Bookings",
+            "path": "/comingSoon",
+            "icon_name": "FdView"
+          },
+          {
+            "menu_code": "Manage Bookings",
+            "path": "/comingSoon",
+            "icon_name": "FdReassign"
+          },
+          {
+            "menu_code": "User Management",
+            "path": "/comingSoon",
+            "icon_name": "FdUser"
+          },
+          {
+            "menu_code": "Reports",
+            "path": "/comingSoon",
+            "icon_name": "FdCustomReport",
+            "subMenu": []
+          },
+          {
+            "menu_code": "Settings",
+            "path": "/comingSoon",
+            "icon_name": "FdSettings"
+          },
+          {
+            "menu_code": "Support",
+            "path": "/comingSoon",
+            "icon_name": "FdHelp"
+          }
+        ],
+        "route": [
+          {
+            "route_id": 199,
+            "path": "/faq",
+            "layout": "HomeLayout",
+            "component": "Faq",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 86,
+            "path": "/planB",
+            "layout": "PlanBLayout",
+            "component": "PlanB",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 175,
+            "path": "/payment",
+            "layout": "PlanBLayout",
+            "component": "Payment",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 176,
+            "path": "/itineraryConfirm",
+            "layout": "PlanBLayout",
+            "component": "ItineraryConfirm",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 88,
+            "path": "/scoreSettings",
+            "layout": "HomeLayout",
+            "component": "ScoreSettings",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 89,
+            "path": "/prePlanned",
+            "layout": "HomeLayout",
+            "component": "PrePlannedDisruptionList",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 90,
+            "path": "/policy",
+            "layout": "HomeLayout",
+            "component": "Policy",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 91,
+            "path": "/createPolicy",
+            "layout": "HomeLayout",
+            "component": "CreatePolicy",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 92,
+            "path": "/flightDisruption",
+            "layout": "HomeLayout",
+            "component": "FlightDisruption",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 93,
+            "path": "/queueList",
+            "layout": "HomeLayout",
+            "component": "QueueList",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 94,
+            "path": "/createQueue",
+            "layout": "HomeLayout",
+            "component": "QueueSettings",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 95,
+            "path": "/editQueue",
+            "layout": "HomeLayout",
+            "component": "QueueSettings",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 95,
+            "path": "/searchFlight",
+            "layout": "HomeLayout",
+            "component": "SearchFlight",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 96,
+            "path": "/addSSR",
+            "layout": "HomeLayout",
+            "component": "AddSSR",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 97,
+            "path": "/flightChange/reviewflight",
+            "layout": "HomeLayout",
+            "component": "ReviewFlight",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 98,
+            "path": "/upcomingEvents",
+            "layout": "HomeLayout",
+            "component": "UpcomingEvents",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 99,
+            "path": "/editProfile",
+            "layout": "HomeLayout",
+            "component": "EditProfile",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 100,
+            "path": "/adhoc",
+            "layout": "HomeLayout",
+            "component": "AdhocDisruptionList",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 101,
+            "path": "/reaccommodation",
+            "layout": "HomeLayout",
+            "component": "Reaccommodation",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 170,
+            "path": "/comingSoon",
+            "layout": "HomeLayout",
+            "component": "ComingSoon",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 181,
+            "path": "/viewPnrInfo",
+            "layout": "HomeLayout",
+            "component": "ViewPnrInfo",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 182,
+            "path": "/login",
+            "layout": "HomeLayout",
+            "component": "Login",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 188,
+            "path": "/planB",
+            "layout": "PlanBLayout",
+            "component": "PlanB",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 195,
+            "path": "/reviewflight",
+            "layout": "HomeLayout",
+            "component": "ReviewFlight",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 206,
+            "path": "/mailer",
+            "layout": "HomeLayout",
+            "component": "Mailer",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 210,
+            "path": "/customReport",
+            "layout": "HomeLayout",
+            "component": "CustomReport",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 211,
+            "path": "/biDashboard",
+            "layout": "HomeLayout",
+            "component": "BiDashboard",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 212,
+            "path": "/adhocPnrList",
+            "layout": "HomeLayout",
+            "component": "Reaccommodation",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 163,
+            "path": "/dashboard",
+            "layout": "HomeLayout",
+            "component": "ComingSoon",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 190,
+            "path": "/addUser",
+            "layout": "HomeLayout",
+            "component": "AddUser",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 191,
+            "path": "/users",
+            "layout": "HomeLayout",
+            "component": "Users",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 192,
+            "path": "/scoreList",
+            "layout": "HomeLayout",
+            "component": "ScoreList",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 193,
+            "path": "/editScoreSettings",
+            "layout": "HomeLayout",
+            "component": "ScoreSettings",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 194,
+            "path": "/editUser",
+            "layout": "HomeLayout",
+            "component": "AddUser",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 194,
+            "path": "/createScorePolicy",
+            "layout": "HomeLayout",
+            "component": "CreatePolicy",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 194,
+            "path": "/editScorePolicy",
+            "layout": "HomeLayout",
+            "component": "CreatePolicy",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 195,
+            "path": "/addAncillary",
+            "layout": "HomeLayout",
+            "component": "AddAncillary",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 196,
+            "path": "/ancillaryList",
+            "layout": "HomeLayout",
+            "component": "AncillaryList",
+            "default": 1,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 197,
+            "path": "/createBundling",
+            "layout": "HomeLayout",
+            "component": "CreateBundling",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 198,
+            "path": "/bundlesList",
+            "layout": "HomeLayout",
+            "component": "BundlesList",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 199,
+            "path": "/policyMapping",
+            "layout": "HomeLayout",
+            "component": "CreatePolicy",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 200,
+            "path": "/policyList",
+            "layout": "HomeLayout",
+            "component": "Policy",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 201,
+            "path": "/viewRequest",
+            "layout": "HomeLayout",
+            "component": "ViewRequest",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 202,
+            "path": "/editAncillary",
+            "layout": "HomeLayout",
+            "component": "AddAncillary",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 203,
+            "path": "/editBundle",
+            "layout": "HomeLayout",
+            "component": "CreateBundling",
+            "default": 0,
+            "permission": ["all"]
+          },
+          {
+            "route_id": 204,
+            "path": "/editPolicyMapping",
+            "layout": "HomeLayout",
+            "component": "CreatePolicy",
+            "default": 0,
+            "permission": ["all"]
+          }
+        ]
+      }
+    }
+  },
+  "addAncillaries": {
+    "responseCode": 0,
+    "response": {
+      "Message": "Success",
+      "data": [
+        {
+          "id": 1,
+          "type": "Air",
+          "category": "Seat",
+          "ancillaryCode": "Seat01",
+          "subcategory": "Window Seat",
+          "description": "Seat selection options",
+          "startDate": "0,0,20",
+          "endDate": "0,0,30",
+          "active": true,
+          "subCategories": ["Window Seat", "Aisle Seat"],
+          "status": "Active",
+          "createdBy": "admin@ado.net",
+          "createdOn": "0, -1, 17",
+          "createdAt": "16:07",
+          "lastUpdatedBy": "admin@ado.net",
+          "lastUpdatedOn": "0, -1, 20",
+          "lastUpdatedAt": "16:07"
+        },
+        {
+          "id": 2,
+          "type": "Air",
+          "category": "Meals",
+          "ancillaryCode": "Meals01",
+          "subcategory": "Vegetarian",
+          "description": "Different meal options available",
+          "startDate": "0,0,20",
+          "endDate": "0,0,30",
+          "active": true,
+          "subCategories": ["Vegetarian", "Non-Vegetarian", "Vegan"],
+          "status": "Active",
+          "createdBy": "admin@ado.net",
+          "createdOn": "0, -1, 17",
+          "createdAt": "16:07",
+          "lastUpdatedBy": "admin@ado.net",
+          "lastUpdatedOn": "0, -1, 20",
+          "lastUpdatedAt": "16:07"
+        },
+        {
+          "id": 3,
+          "type": "Air",
+          "category": "Baggage",
+          "ancillaryCode": "Baggage01",
+          "subcategory": "10kg Extra",
+          "description": "Additional baggage allowance",
+          "startDate": "0,0,20",
+          "endDate": "0,0,30",
+          "active": true,
+          "subCategories": ["10kg Extra", "20kg Extra"],
+          "status": "Active",
+          "createdBy": "admin@ado.net",
+          "createdOn": "0, -1, 17",
+          "createdAt": "16:07",
+          "lastUpdatedBy": "admin@ado.net",
+          "lastUpdatedOn": "0, -1, 20",
+          "lastUpdatedAt": "16:07"
+        },
+        {
+          "id": 5,
+          "type": "Non-Air",
+          "category": "Airport Lounge",
+          "ancillaryCode": "Lounge01",
+          "subcategory": "VIP Lounge",
+          "description": "VIP and standard lounge access",
+          "startDate": "0,0,20",
+          "endDate": "0,0,30",
+          "active": true,
+          "subCategories": ["VIP Lounge", "Standard Lounge"],
+          "status": "Active",
+          "createdBy": "admin@ado.net",
+          "createdOn": "0, -1, 17",
+          "createdAt": "16:07",
+          "lastUpdatedBy": "admin@ado.net",
+          "lastUpdatedOn": "0, -1, 20",
+          "lastUpdatedAt": "16:07"
+        },
+        {
+          "id": 6,
+          "type": "Non-Air",
+          "category": "Cab Service",
+          "ancillaryCode": "CabService01",
+          "subcategory": "VIP Cab",
+          "description": "Cab service for airport transfers",
+          "startDate": "0,0,20",
+          "endDate": "0,0,30",
+          "active": true,
+          "subCategories": ["VIP Cab", "Standard Cab"],
+          "status": "Active",
+          "createdBy": "admin@ado.net",
+          "createdOn": "0, -1, 17",
+          "createdAt": "16:07",
+          "lastUpdatedBy": "admin@ado.net",
+          "lastUpdatedOn": "0, -1, 20",
+          "lastUpdatedAt": "16:07"
+        },
+        {
+          "id": 7,
+          "type": "Non-Air",
+          "category": "Pet Travel",
+          "ancillaryCode": "PetTravel01",
+          "subcategory": "Pet Assistance",
+          "description": "Travel assistance for pets",
+          "startDate": "0,0,20",
+          "endDate": "0,0,30",
+          "active": true,
+          "subCategories": ["Pet Assistance", "Pet Lounge"],
+          "status": "Active",
+          "createdBy": "admin@ado.net",
+          "createdOn": "0, -1, 17",
+          "createdAt": "16:07",
+          "lastUpdatedBy": "admin@ado.net",
+          "lastUpdatedOn": "0, -1, 20",
+          "lastUpdatedAt": "16:07"
+        },
+        {
+          "id": 8,
+          "type": "Non-Air",
+          "category": "Travel Insurance",
+          "ancillaryCode": "Insurance01",
+          "subcategory": "Basic Plan",
+          "description": "Comprehensive travel insurance plans",
+          "startDate": "0,0,20",
+          "endDate": "0,0,30",
+          "active": true,
+          "subCategories": ["Basic Plan", "Premium Plan"],
+          "status": "Active",
+          "createdBy": "admin@ado.net",
+          "createdOn": "0, -1, 17",
+          "createdAt": "16:07",
+          "lastUpdatedBy": "admin@ado.net",
+          "lastUpdatedOn": "0, -1, 20",
+          "lastUpdatedAt": "16:07"
+        },
+        {
+          "id": 9,
+          "type": "Non-Air",
+          "category": "Meet & Assist",
+          "ancillaryCode": "MeetAssist01",
+          "subcategory": "VIP Assistance",
+          "description": "Personalized airport assistance",
+          "startDate": "0,0,20",
+          "endDate": "0,0,30",
+          "active": true,
+          "subCategories": ["VIP Assistance", "Standard Assistance"],
+          "status": "Active",
+          "createdBy": "admin@ado.net",
+          "createdOn": "0, -1, 17",
+          "createdAt": "16:07",
+          "lastUpdatedBy": "admin@ado.net",
+          "lastUpdatedOn": "0, -1, 20",
+          "lastUpdatedAt": "16:07"
+        },
+        {
+          "id": 10,
+          "type": "Non-Air",
+          "category": "Hotel",
+          "ancillaryCode": "Hotel01",
+          "subcategory": "Deluxe Room",
+          "description": "Hotel accommodation services",
+          "startDate": "0,0,20",
+          "endDate": "0,0,30",
+          "active": true,
+          "subCategories": ["Deluxe Room", "Suite"],
+          "status": "Active",
+          "createdBy": "admin@ado.net",
+          "createdOn": "0, -1, 17",
+          "createdAt": "16:07",
+          "lastUpdatedBy": "admin@ado.net",
+          "lastUpdatedOn": "0, -1, 20",
+          "lastUpdatedAt": "16:07"
+        }
+      ]
+    }
+  },
+  "createBundle": {
+    "responseCode": 0,
+    "response": {
+      "Message": "Success",
+      "data": [
+        {
+          "id": 2,
+          "bundleName": "Meal Baggage Saver",
+          "bundleCode": "MealBag20",
+          "description": "Offer price of 20% discount in meal and baggage combo",
+          "startDate": "0,0,20",
+          "endDate": "0,0,31",
+          "active": false,
+          "bundlesAdded": ["Vegetarian", "Non-Vegetarian", "20kg Extra"],
+          "status": "Inactive",
+          "createdBy": "airline_admin@ado.net",
+          "createdOn": "0,-1,25",
+          "createdAt": "04:02",
+          "lastUpdatedBy": "airline_admin@ado.net",
+          "lastUpdatedOn": "0,-1,25",
+          "lastUpdatedAt": "04:02"
+        },
+        {
+          "id": 3,
+          "bundleName": "Seat Baggage bundle",
+          "bundleCode": "SeatBag01",
+          "description": "Seat + Baggage",
+          "startDate": "0,0,25",
+          "endDate": "0,0,31",
+          "active": true,
+          "bundlesAdded": ["Window Seat", "10kg Extra"],
+          "status": "Active",
+          "createdBy": "airline_admin@ado.net",
+          "createdOn": "0,-1,25",
+          "createdAt": "10:42",
+          "lastUpdatedBy": "airline_admin@ado.net",
+          "lastUpdatedOn": "0,-1,25",
+          "lastUpdatedAt": "10:42"
+        },
+        {
+          "id": 4,
+          "bundleName": "Seat Plus Meal",
+          "bundleCode": "STML12",
+          "description": "Seat and Meal",
+          "startDate": "0,0,15",
+          "endDate": "0,0,31",
+          "active": true,
+          "bundlesAdded": ["Window Seat", "Non-Vegetarian"],
+          "status": "Active",
+          "createdBy": "airline_admin@ado.net",
+          "createdOn": "0,-1,25",
+          "createdAt": "12:19",
+          "lastUpdatedBy": "airline_admin@ado.net",
+          "lastUpdatedOn": "0,-1,25",
+          "lastUpdatedAt": "12:19"
+        }
+      ]
+    }
+  },
+  "policies": {
+    "responseCode": 0,
+    "response": {
+      "Message": "Success",
+      "data": [
+        {
+          "id": 7,
+          "actions": {
+            "saleType": [
+              {
+                "saleType": "amountBased"
+              }
+            ],
+            "totalAmount": [
+              {
+                "totalAmount": "100"
+              }
+            ],
+            "windowSeat": [
+              {
+                "windowSeat": 50
+              }
+            ],
+            "vegMeals": [
+              {
+                "vegMeals": 50
+              }
+            ]
+          },
+          "trigger": 4,
+          "policyName": "Baggage - LHR ",
+          "effectiveDate": "0,2,1",
+          "discontinueDate": "0,2,30",
+          "createdBy": "airline_admin@ado.net",
+          "createdOn": "0,0,25",
+          "createdAt": "03:22",
+          "lastUpdatedBy": "airline_admin@ado.net",
+          "lastUpdatedOn": "0,0,25",
+          "lastUpdatedAt": "03:22",
+          "bundleCode": "Weekend explorer",
+          "priority": 10,
+          "status": "Active",
+          "conditions": {
+            "destination": [
+              {
+                "time": "lhr",
+                "operation": "="
+              }
+            ]
+          },
+          "triggerCriteria": 1
+        },
+        {
+          "id": 8,
+          "actions": {
+            "saleType": [
+              {
+                "saleType": "amountBased"
+              }
+            ],
+            "totalAmount": [
+              {
+                "totalAmount": "200"
+              }
+            ],
+            "windowSeat": [
+              {
+                "windowSeat": 100
+              }
+            ],
+            "vegMeals": [
+              {
+                "vegMeals": 100
+              }
+            ]
+          },
+          "trigger": 2,
+          "policyName": "Flight 721 - Leisure",
+          "effectiveDate": "0,0,28",
+          "discontinueDate": "0,1,10",
+          "createdBy": "airline_admin@ado.net",
+          "createdOn": "0,0,25",
+          "createdAt": "03:23",
+          "lastUpdatedBy": "airline_admin@ado.net",
+          "lastUpdatedOn": "0,0,25",
+          "lastUpdatedAt": "03:23",
+          "bundleCode": "Family saver",
+          "priority": 10,
+          "status": "Active",
+          "conditions": {
+            "customerType": [
+              {
+                "time": "leisureTraveler",
+                "operation": "="
+              }
+            ]
+          },
+          "triggerCriteria": 1
+        },
+        {
+          "id": 9,
+          "actions": {
+            "saleType": [
+              {
+                "saleType": "discountBased"
+              }
+            ],
+            "windowSeat": [
+              {
+                "windowSeat": 75,
+                "logicType": "absolute"
+              }
+            ],
+            "vegMeals": [
+              {
+                "vegMeals": 75,
+                "logicType": "absolute"
+              }
+            ]
+          },
+          "trigger": 4,
+          "policyName": "Seat - SIN origin policy\t",
+          "effectiveDate": "0,1,1",
+          "discontinueDate": "0,2,30",
+          "createdBy": "airline_admin@ado.net",
+          "createdOn": "0,0,25",
+          "createdAt": "10:01",
+          "lastUpdatedBy": "airline_admin@ado.net",
+          "lastUpdatedOn": "0,0,25",
+          "lastUpdatedAt": "10:01",
+          "bundleCode": "Weekend explorer",
+          "priority": 10,
+          "status": "Active",
+          "conditions": {
+            "origin": [
+              {
+                "operation": "=",
+                "time": "sin"
+              }
+            ]
+          },
+          "triggerCriteria": 1
+        },
+        {
+          "id": 10,
+          "actions": {
+            "saleType": [
+              {
+                "saleType": "amountBased"
+              }
+            ],
+            "totalAmount": [
+              {
+                "totalAmount": "200"
+              }
+            ],
+            "windowSeat": [
+              {
+                "windowSeat": 100
+              }
+            ],
+            "vegMeals": [
+              {
+                "vegMeals": 100
+              }
+            ]
+          },
+          "trigger": 2,
+          "policyName": "Business comfort",
+          "effectiveDate": "0,0,26",
+          "discontinueDate": "0,1,31",
+          "createdBy": "airline_admin@ado.net",
+          "createdOn": "0,0,25",
+          "createdAt": "10:45",
+          "lastUpdatedBy": "airline_admin@ado.net",
+          "lastUpdatedOn": "0,0,25",
+          "lastUpdatedAt": "10:45",
+          "bundleCode": "Family saver",
+          "priority": 1,
+          "status": "Active",
+          "conditions": {
+            "origin": [
+              {
+                "time": "pkx",
+                "operation": "="
+              }
+            ],
+            "customerType": [
+              {
+                "time": "businessTraveler",
+                "operation": "="
+              }
+            ]
+          },
+          "triggerCriteria": 1
+        },
+        {
+          "id": 11,
+          "actions": {
+            "saleType": [
+              {
+                "saleType": "discountBased"
+              }
+            ],
+            "windowSeat": [
+              {
+                "windowSeat": 0,
+                "logicType": "percentage"
+              }
+            ],
+            "vegMeals": [
+              {
+                "vegMeals": 0,
+                "logicType": "absolute"
+              }
+            ]
+          },
+          "trigger": 1,
+          "policyName": "Seat and Meal Promotion",
+          "effectiveDate": "0,0,25",
+          "discontinueDate": "1,0,25",
+          "createdBy": "airline_admin@ado.net",
+          "createdOn": "0,0,25",
+          "createdAt": "12:21",
+          "lastUpdatedBy": "airline_admin@ado.net",
+          "lastUpdatedOn": "0,0,25",
+          "lastUpdatedAt": "12:21",
+          "bundleCode": "Business comfort",
+          "priority": 10,
+          "status": "Active",
+          "conditions": {
+            "airlineCode": [
+              {
+                "operation": "=",
+                "airline": "U0"
+              }
+            ]
+          },
+          "triggerCriteria": 1
+        },
+        {
+          "id": 12,
+          "actions": {
+            "saleType": [
+              {
+                "saleType": "discountBased"
+              }
+            ],
+            "windowSeat": [
+              {
+                "windowSeat": "0",
+                "logicType": "absolute"
+              }
+            ],
+            "vegMeals": [
+              {
+                "vegMeals": 25,
+                "logicType": "percentage"
+              }
+            ]
+          },
+          "trigger": 1,
+          "policyName": "Percentage Discount",
+          "effectiveDate": "0,0,7",
+          "discontinueDate": "1,0,7",
+          "createdBy": "airline_admin@ado.net",
+          "createdOn": "0,0,7",
+          "createdAt": "15:14",
+          "lastUpdatedBy": "airline_admin@ado.net",
+          "lastUpdatedOn": "0,0,7",
+          "lastUpdatedAt": "15:14",
+          "bundleCode": "Business comfort",
+          "priority": 10,
+          "status": "Active",
+          "conditions": {
+            "origin": [
+              {
+                "operation": "=",
+                "time": "pkx"
+              }
+            ]
+          },
+          "triggerCriteria": 1
+        },
+        {
+          "id": 13,
+          "actions": {
+            "saleType": [
+              {
+                "saleType": "amountBased"
+              }
+            ],
+            "windowSeat": [
+              {
+                "logicType": "absolute",
+                "windowSeat": "50"
+              }
+            ],
+            "vegMeals": [
+              {
+                "logicType": "percentage",
+                "vegMeals": 10
+              }
+            ],
+            "totalAmount": []
+          },
+          "trigger": 2,
+          "policyName": "Corporate Deal",
+          "effectiveDate": "0,0,9",
+          "discontinueDate": "1,0,9",
+          "createdBy": "airline_admin@ado.net",
+          "createdOn": "0,0,9",
+          "createdAt": "11:50",
+          "lastUpdatedBy": "airline_admin@ado.net",
+          "lastUpdatedOn": "0,0,9",
+          "lastUpdatedAt": "11:50",
+          "bundleCode": "Family saver",
+          "priority": 10,
+          "status": "Active",
+          "conditions": {
+            "origin": [
+              {
+                "operation": "=",
+                "time": "sin"
+              }
+            ],
+            "destination": [
+              {
+                "operation": "=",
+                "time": "lhr"
+              }
+            ],
+            "customerType": [
+              {
+                "time": "businessTraveler",
+                "operation": "="
+              }
+            ]
+          },
+          "triggerCriteria": 1
+        }
+      ]
+    }
+  },
+  "createPolicy": {
+    "responseCode": 0,
+    "response": {
+      "message": "Success",
+      "data": {
+        "conditions": [
+          {
+            "id": 1,
+            "name": "Origin",
+            "key": "origin",
+            "type": "string",
+            "conditionRows": {
+              "id": 1000,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 100,
+                  "field": "select",
+                  "key": "time",
+                  "value": "",
+                  "placeholder": "Select",
+                  "options": [
+                    {
+                      "name": "Singapore (SIN)",
+                      "key": "sin"
+                    },
+                    {
+                      "name": "London (LHR)",
+                      "key": "lhr"
+                    },
+                    {
+                      "name": "Beijing (PKX)",
+                      "key": "pkx"
+                    },
+                    {
+                      "name": "Penang (PEN)",
+                      "key": "pen"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_16_DepartTime"
+          },
+          {
+            "id": 12,
+            "name": "Airline code",
+            "key": "airlineCode",
+            "type": "string",
+            "placeholder": "Enter airline code",
+            "conditionRows": {
+              "id": 1001,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 101,
+                  "field": "input",
+                  "key": "airline",
+                  "value": "",
+                  "placeholder": "Enter airline code"
+                }
+              ]
+            },
+            "isCloneable": false,
+            "icon": "Infi-Fd_16_DepartTime"
+          },
+          {
+            "id": 2,
+            "name": "Destination",
+            "key": "destination",
+            "type": "string",
+            "conditionRows": {
+              "id": 1001,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 101,
+                  "field": "select",
+                  "key": "time",
+                  "value": "",
+                  "placeholder": "Select",
+                  "options": [
+                    {
+                      "name": "Singapore (SIN)",
+                      "key": "sin"
+                    },
+                    {
+                      "name": "London (LHR)",
+                      "key": "lhr"
+                    },
+                    {
+                      "name": "Beijing (PKX)",
+                      "key": "pkx"
+                    },
+                    {
+                      "name": "Penang (PEN)",
+                      "key": "pen"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": false,
+            "icon": "Infi-Fd_18_FlightDepartDate"
+          },
+          {
+            "id": 3,
+            "name": "Departure date",
+            "key": "departureDate",
+            "type": "string",
+            "conditionRows": {
+              "id": 1002,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 101,
+                  "field": "select",
+                  "key": "time",
+                  "value": "",
+                  "placeholder": "Select",
+                  "options": [
+                    {
+                      "name": "1hrs",
+                      "key": "1hrs"
+                    },
+                    {
+                      "name": "5hrs",
+                      "key": "5hrs"
+                    },
+                    {
+                      "name": "12hrs",
+                      "key": "12hrs"
+                    },
+                    {
+                      "name": "24hrs",
+                      "key": "24hrs"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_22_CabinClass"
+          },
+          {
+            "id": 13,
+            "name": "Point of origin",
+            "key": "pointOfOrigin",
+            "type": "string",
+            "conditionRows": {
+              "id": 1011,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 114,
+                  "key": "flightStatus",
+                  "type": "string",
+                  "field": "select",
+                  "value": "",
+                  "placeholder": "Select",
+                  "options": [
+                    {
+                      "name": "In-Flight Return to Origin",
+                      "key": "inFlightReturnToOrigin"
+                    },
+                    {
+                      "name": "Scheduled Return to Origin",
+                      "key": "scheduledReturnToOrigin"
+                    },
+                    {
+                      "name": "Postponed Departure",
+                      "key": "postponedDeparture"
+                    },
+                    {
+                      "name": "First class",
+                      "key": "firstClass"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_27_FlightType"
+          },
+          {
+            "id": 14,
+            "name": "Point of destination",
+            "key": "pointOfDestination",
+            "type": "string",
+            "conditionRows": {
+              "id": 1015,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 113,
+                  "key": "legAffected",
+                  "type": "string",
+                  "field": "select",
+                  "value": "",
+                  "placeholder": "Select",
+                  "options": [
+                    {
+                      "name": "Entire Journey",
+                      "key": "entireJourney"
+                    },
+                    {
+                      "name": "1st Leg",
+                      "key": "1stLeg"
+                    },
+                    {
+                      "name": "2nd Leg",
+                      "key": "2ndLeg"
+                    },
+                    {
+                      "name": "Additional Stop",
+                      "key": "additionalStop"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_20_FlightStatus"
+          },
+          {
+            "id": 4,
+            "name": "Customer type",
+            "key": "customerType",
+            "type": "number",
+            "conditionRows": {
+              "id": 1003,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 103,
+                  "field": "select",
+                  "key": "time",
+                  "value": "",
+                  "placeholder": "Select",
+                  "options": [
+                    {
+                      "name": "Leisure traveler",
+                      "key": "leisureTraveler"
+                    },
+                    {
+                      "name": "Business traveler",
+                      "key": "businessTraveler"
+                    },
+                    {
+                      "name": "Student traveler",
+                      "key": "studentTraveler"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_20_FlightStatus"
+          },
+          {
+            "id": 15,
+            "name": "Purpose of travel",
+            "key": "purposeOfTravel",
+            "type": "string",
+            "conditionRows": {
+              "id": 1016,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 115,
+                  "key": "cause",
+                  "type": "string",
+                  "field": "select",
+                  "value": "",
+                  "placeholder": "Select",
+                  "options": [
+                    {
+                      "name": "Technical Issue",
+                      "key": "technicalIssue"
+                    },
+                    {
+                      "name": "Weather Conditions",
+                      "key": "weatherConditions"
+                    },
+                    {
+                      "name": "Medical Emergency",
+                      "key": "medicalEmergency"
+                    },
+                    {
+                      "name": "ATC Restriction",
+                      "key": "atcRestriction"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_20_FlightStatus"
+          },
+          {
+            "id": 16,
+            "name": "BookingChannel",
+            "key": "bookingChannel",
+            "type": "string",
+            "conditionRows": {
+              "id": 1017,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 116,
+                  "key": "timeImpact",
+                  "field": "inputDropdown",
+                  "inputValue": "",
+                  "value": "",
+                  "placeholder": "Select",
+                  "options": [
+                    {
+                      "name": "hrs",
+                      "key": "hrs"
+                    },
+                    {
+                      "name": "days",
+                      "key": "days"
+                    },
+                    {
+                      "name": "months",
+                      "key": "months"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_16_DepartTime"
+          },
+          {
+            "id": 17,
+            "name": "Route",
+            "key": "route",
+            "type": "string",
+            "conditionRows": {
+              "id": 1018,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 117,
+                  "key": "passengerStatus",
+                  "type": "string",
+                  "field": "select",
+                  "value": "",
+                  "placeholder": "Select",
+                  "options": [
+                    {
+                      "name": "Pre-Check-In",
+                      "key": "preCheckIn"
+                    },
+                    {
+                      "name": "Post-Check-In",
+                      "key": "postCheckIn"
+                    },
+                    {
+                      "name": "Boarding Completed",
+                      "key": "boardingCompleted"
+                    },
+                    {
+                      "name": "In-Flight",
+                      "key": "inFlight"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_16_DepartTime"
+          },
+          {
+            "id": 6,
+            "name": "Stops",
+            "key": "stops",
+            "type": "number",
+            "conditionRows": {
+              "id": 1004,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 105,
+                  "key": "stop",
+                  "type": "string",
+                  "field": "select",
+                  "value": "",
+                  "placeholder": "Select",
+                  "options": [
+                    {
+                      "name": "Non stop",
+                      "key": "nonStop"
+                    },
+                    {
+                      "name": "1 stop",
+                      "key": "1stop"
+                    },
+                    {
+                      "name": "2 stops",
+                      "key": "2stops"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_20_FlightStatus"
+          },
+          {
+            "id": 7,
+            "name": "Country",
+            "key": "country",
+            "type": "string",
+            "conditionRows": {
+              "id": 1005,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 106,
+                  "key": "tripType",
+                  "type": "string",
+                  "field": "select",
+                  "value": "",
+                  "placeholder": "Select",
+                  "options": [
+                    {
+                      "name": "One way",
+                      "key": "oneWay"
+                    },
+                    {
+                      "name": "Round trip",
+                      "key": "roundTrip"
+                    },
+                    {
+                      "name": "Multi city",
+                      "key": "multiCity"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_24_GroupSize"
+          },
+          {
+            "id": 8,
+            "name": "Airline code",
+            "key": "airlineCode",
+            "type": "number",
+            "conditionRows": {
+              "id": 1006,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 107,
+                  "key": "passenger",
+                  "field": "select",
+                  "value": "",
+                  "placeholder": "Select",
+                  "options": [
+                    {
+                      "name": "10",
+                      "key": "ten"
+                    },
+                    {
+                      "name": "25",
+                      "key": "twentyFive"
+                    },
+                    {
+                      "name": "50",
+                      "key": "fivety"
+                    },
+                    {
+                      "name": "100",
+                      "key": "hundred"
+                    },
+                    {
+                      "name": "200",
+                      "key": "twoHundred"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_25_SpecialServices"
+          },
+          {
+            "id": 19,
+            "name": "Login ID",
+            "key": "loginId",
+            "type": "string",
+            "conditionRows": {
+              "id": 1020,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 119,
+                  "key": "airportInvolved",
+                  "type": "string",
+                  "field": "select",
+                  "value": "",
+                  "placeholder": "Select",
+                  "options": [
+                    {
+                      "name": "Departure Airport",
+                      "key": "departureAirport"
+                    },
+                    {
+                      "name": "Arrival Airport",
+                      "key": "arrivalAirport"
+                    },
+                    {
+                      "name": "Stopover Airport 1",
+                      "key": "Stopover Airport 2"
+                    },
+                    {
+                      "name": "Alternate Aiport",
+                      "key": "alternateAirport"
+                    },
+                    {
+                      "name": "Tech Stop",
+                      "key": "techStop"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_16_DepartTime"
+          },
+          {
+            "id": 9,
+            "name": "Cabin class",
+            "key": "cabinClass",
+            "type": "string",
+            "conditionRows": {
+              "id": 1007,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 108,
+                  "key": "ssr",
+                  "type": "string",
+                  "field": "select",
+                  "value": "",
+                  "placeholder": "Select",
+                  "options": [
+                    {
+                      "name": "Food",
+                      "key": "food"
+                    },
+                    {
+                      "name": "Baggage",
+                      "key": "baggage"
+                    },
+                    {
+                      "name": "Seat",
+                      "key": "seat"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_27_FlightType"
+          },
+          {
+            "id": 20,
+            "name": "Point of sale",
+            "key": "pointOfSale",
+            "type": "string",
+            "conditionRows": {
+              "id": 1021,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 120,
+                  "key": "divertionOccurence",
+                  "type": "string",
+                  "field": "select",
+                  "value": "",
+                  "placeholder": "Select",
+                  "options": [
+                    {
+                      "name": "Pre-departure",
+                      "key": "preDeparture"
+                    },
+                    {
+                      "name": "Mid-flight",
+                      "key": "midFlight"
+                    },
+                    {
+                      "name": "Enroute(during stopover)",
+                      "key": "enroute"
+                    },
+                    {
+                      "name": "Near Arrival",
+                      "key": "nearArrival"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_16_DepartTime"
+          },
+          {
+            "id": 10,
+            "name": "Fare type",
+            "key": "fairType",
+            "type": "string",
+            "conditionRows": {
+              "id": 1008,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 109,
+                  "key": "fare",
+                  "type": "string",
+                  "field": "select",
+                  "value": "",
+                  "placeholder": "Select",
+                  "options": [
+                    {
+                      "name": "Economy fare",
+                      "key": "economyFare"
+                    },
+                    {
+                      "name": "Business fare",
+                      "key": "businessFare"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_26_FareType"
+          },
+          {
+            "id": 21,
+            "name": "Flight number",
+            "key": "flightNumber",
+            "type": "string",
+            "conditionRows": {
+              "id": 1022,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 121,
+                  "key": "divertionType",
+                  "type": "string",
+                  "field": "select",
+                  "value": "",
+                  "placeholder": "Select",
+                  "options": [
+                    {
+                      "name": "Added stopover to a direct flight",
+                      "key": "addedStopover"
+                    },
+                    {
+                      "name": "Changed stopover",
+                      "key": "changedStopover"
+                    },
+                    {
+                      "name": "Rerouted final destination",
+                      "key": "reroutedFinalDestination"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_16_DepartTime"
+          }
+        ],
+        "actions": [
+          {
+            "id": 13,
+            "name": "Sale type",
+            "default": true,
+            "key": "saleType",
+            "conditionRows": {
+              "id": 1011,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 112,
+                  "key": "saleType",
+                  "field": "select",
+                  "value": "amountBased",
+                  "placeholder": "Sale type",
+                  "options": [
+                    {
+                      "name": "Amount based",
+                      "key": "amountBased"
+                    },
+                    {
+                      "name": "Discount based",
+                      "key": "discountBased"
+                    }
+                  ]
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_32_Rebook"
+          },
+          {
+            "id": 14,
+            "name": "Total amount",
+            "default": true,
+            "key": "totalAmount",
+            "type": "number",
+            "conditionRows": {
+              "id": 1012,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 115,
+                  "key": "totalAmount",
+                  "field": "input",
+                  "value": "0"
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_33_Accept"
+          },
+          {
+            "id": 15,
+            "name": "Window seat",
+            "default": true,
+            "key": "windowSeat",
+            "type": "number",
+            "conditionRows": {
+              "id": 1013,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 116,
+                  "key": "windowSeat",
+                  "field": "input",
+                  "value": ""
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_33_Accept"
+          },
+          {
+            "id": 16,
+            "name": "Veg meals",
+            "key": "vegMeals",
+            "default": true,
+            "type": "number",
+            "conditionRows": {
+              "id": 1014,
+              "operation": "",
+              "fields": [
+                {
+                  "id": 117,
+                  "key": "vegMeals",
+                  "field": "input",
+                  "value": ""
+                }
+              ]
+            },
+            "isCloneable": true,
+            "icon": "Infi-Fd_33_Accept"
+          }
+        ],
+        "trigger": [
+          {
+            "id": 1,
+            "name": "Seat-Meal-HKD10"
+          },
+          {
+            "id": 2,
+            "name": "Business comfort"
+          },
+          {
+            "id": 3,
+            "name": "Family saver"
+          },
+          {
+            "id": 4,
+            "name": "Retail plus"
+          },
+          {
+            "id": 5,
+            "name": "Weekend explorer"
+          }
+        ]
+      }
+    }
+  }
+}

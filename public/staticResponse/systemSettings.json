@@ -1,0 +1,110 @@
+{
+  "_comment": "System settings configurations",
+  "responseCode": 0,
+  "response": {
+    "Message": "Success",
+    "data": {
+      "site": {
+        "airline_code": "VA",
+        "currency": {
+          "code": "USD",
+          "symbol": "$"
+        },
+        "ads_banner": true,
+        "pnr_pax_split_count": 40,
+        "layout": {
+          "header_logo_placement": "left",
+          "page_direction": "left",
+          "position": "horizontal"
+        },
+        "language": {
+          "default": "en-US",
+          "available": [
+            {
+              "code": "en-US",
+              "text": "English",
+              "flag": "english"
+            },
+            {
+              "code": "hi-IN",
+              "text": "Hindi",
+              "flag": "hindi"
+            }
+          ]
+        },
+        "date_time_format": {
+          "date_format": "MMM DD, YYYY",
+          "time_formatter": "%d %Y",
+          "date_time_formatter": "%d-%M-%Y %H:%i %A",
+          "time_format": {
+            "hour12": true,
+            "hour": "2-digit",
+            "minute": "2-digit"
+          }
+        }
+      },
+      "security": {
+        "encryption": {
+          "key": "travelAgency",
+          "url_path_encryption": false,
+          "browser_storage_encryption": false
+        }
+      },
+      "navigation": {
+        "menu": {
+          "show_submenu_dropdown": false
+        },
+        "paths": {
+          "final_redirection_path": "new-booking",
+          "ticketless_final_redirection_path": "add-ssr"
+        },
+        "workflow": {
+          "process_menu_name": "manage_booking",
+          "button_text_mapping": {
+            "Name list submitted": "Update name list",
+            "Payment completed": "Make payment",
+            "Ticket issued": "Download ticket"
+          }
+        }
+      },
+      "flight_search": {
+        "multi_select": false,
+        "modify_search_enabled": false,
+        "list_config": {
+          "return_trip_split_view": false,
+          "showing_flight_count": 4,
+          "incremental_flight_count": 2,
+          "configurations": {
+            "adhoc": {
+              "checkbox": true,
+              "multi_select": false,
+              "multi_select_count": 4
+            },
+            "series": {
+              "checkbox": true,
+              "multi_select": false,
+              "multi_select_count": 2
+            },
+            "conference": {
+              "checkbox": true,
+              "multi_select": false,
+              "multi_select_count": 3
+            },
+            "instant_quote": {
+              "checkbox": false,
+              "multi_select": false,
+              "multi_select_count": 1
+            }
+          }
+        }
+      },
+      "request_handling": {
+        "select_flights_by_default": false,
+        "collapsible_details": false
+      },
+      "request_form": {
+        "horizontal_form": true
+      }
+    }
+  }
+}

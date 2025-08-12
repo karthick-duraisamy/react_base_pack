@@ -1,0 +1,34 @@
+.cls-homeLayout {
+  min-height: 100vh;
+  .cls-viewPnrInfo {
+    padding: 0;
+  }
+}
+
+.ant-menu-submenu-popup {
+  &.ant-menu-submenu {
+    .ant-menu-vertical {
+      .ant-menu-submenu-title, .ant-menu-item {
+        padding-inline-start: 10px;
+        margin: 0;
+      }
+    }
+  }
+
+  .anticon {
+    vertical-align: middle;
+    margin-block-start: -2px;
+      svg {
+          height: 15px;
+          width: 15px;
+      }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .cls-homeLayout {
+    .ant-menu-horizontal {
+      justify-content: flex-start;
+    }
+  }
+}

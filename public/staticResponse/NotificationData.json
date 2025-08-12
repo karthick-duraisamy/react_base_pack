@@ -1,0 +1,36 @@
+{
+  "responseCode": 0,
+  "response": {
+    "Message": "Success",
+    "data": [
+      {
+        "flightNumber": "VA-0243",
+        "message": "071 WX",
+        "badge_color": "#F82828",
+        "message_description": "Bad weather - Ceiling / Visibility, runway condition (if slow ground handling due to weather use 77) ",
+        "time": "0,0,31 13:20"
+      },
+      {
+        "flightNumber": "VA-0482",
+        "message": "002 ICT",
+        "badge_color": "#F82828",
+        "message_description": "System technical issue - PLANNED POWER OUTAGE, unscheduled extension of planned works ",
+        "time": "0,0,31 19:10"
+      },
+      {
+        "flightNumber": "VA-0727",
+        "message": "003 A SEC",
+        "badge_color": "#F5AE24",
+        "message_description": "Operational reasons - Late Airline security staff, Airline security staff come late to A/C for A/C antisabotage process or any mandatory security process",
+        "time": "0,1,5 22:15"
+      },
+      {
+        "flightNumber": "VA-0521",
+        "message": "042 A ENG",
+        "badge_color": "#63C834",
+        "message_description": "Technical delay - LATE RELEASE FROM SCHEDULED MAINTENANCE, aircraft release late from planned maintenance (if late tow use 34G)",
+        "time": "0,1,6 01:30"
+      }
+    ]
+  }
+}
