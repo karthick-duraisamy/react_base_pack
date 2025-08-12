@@ -23,40 +23,22 @@ import { serviceErrorLoggerMiddleware } from "./Service.middleware";
 
 // Importing reducers for managing different slices of state
 import { userReducer } from "./User.store";
-import { PNRReducer } from "./Pnr.store";
 // import { MenuReducer } from "./menu.store";
 import { MenuReducer } from "./Menu.store";
-import { RequestDetailReducer } from "./RequestDetail.store";
 import { SystemSettingsReducer } from "./SystemSettings.store";
-import { QueueReducer } from "./Queue.store";
-import { FlightSeatReducer } from "./Ssr.store";
-import { ReviewFlightReducer } from "./ReviewFlight.store";
-import { PassengerListReducer } from "./Passenger.store";
-import { DashboardReducer } from "./Dashboard.store";
-import { PnrListReducer } from "./PnrList.store";
 import { initializerReducer } from "./Initializer.store";
 import { ThemeReducer } from "./Theme.store";
-import { PolicyReducer } from "./Policy.store";
 import { GeneralReducer } from "./General.store";
 
 // Configuring the Redux store
 const store = configureStore({
     reducer: {
-        RequestDetailReducer, // Reducer for managing request details
         user: userReducer, // Reducer for user-related state
-        PNRReducer, // Reducer for PNR (Passenger Name Record) data
         MenuReducer, // Reducer for handling menu state
         SystemSettingsReducer, // Reducer for system settings
         initializerReducer,
         GeneralReducer,
-        PnrListReducer,
-        PolicyReducer,
-        DashboardReducer,
-        QueueReducer,
         ThemeReducer,
-        ReviewFlightReducer,
-        FlightSeatReducer,
-        PassengerListReducer,
 
         // Injecting API services into the Redux store
         [AuthService.reducerPath]: AuthService.reducer,

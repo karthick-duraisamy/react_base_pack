@@ -1,6 +1,5 @@
 // import { ApiResponse } from "../ServiceTypes";
 import { ChatBotSerice, CommonService } from "../Services";
-import { ApiResponse } from "../ServiceTypes";
 import {
   AvailableFlight,
   // IPnrListRequest,
