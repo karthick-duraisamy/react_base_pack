@@ -12,10 +12,10 @@ import {
   Typography,
   Tooltip,
 } from "antd";
-import { MessageData, ReadAtList, userParamData } from "./Notification.d";
-import { hydrateUserFromLocalStorage } from "@/utils/user";
+import { MessageData, ReadAtList } from "./Notification.d";
+// import { hydrateUserFromLocalStorage } from "@/utils/user";
 import {
-  useGetMessageMutation,
+  // useGetMessageMutation,
   useUpdateMessageStatusMutation,
 } from "@/services/notification/Notification";
 import { FdNotificationIcon } from "../Icons/Icons";
@@ -28,37 +28,36 @@ function Notification() {
   const initialRender = useRef(true);
   const [open, setopen] = useState(false);
   const hasMore = useRef(true);
-  const [pageNo, setPageNo] = useState(1);
+  // const [pageNo, setPageNo] = useState(1);
   const { Panel } = Collapse;
   // eslint-disable-next-line
-  const [getList] = useGetMessageMutation();
+  // const [getList] = useGetMessageMutation();
   const [updateStatus] = useUpdateMessageStatusMutation();
   const [readData, setReadData] = useState<MessageData[]>([]);
-  const userData: any = hydrateUserFromLocalStorage();
+  // const userData: any = hydrateUserFromLocalStorage();
 
-  const getListPostData: userParamData = {
-    email_id: userData?.email,
-    project: "GRM",
-    page: pageNo,
-  };
+  // const getListPostData: userParamData = {
+  //   email_id: userData?.email,
+  //   project: "GRM",
+  //   page: pageNo,
+  // };
 
-  useEffect(() => {
-    if (initialRender.current) {
-      initialRender.current = false;
-    } else {
-      debugger
-      getList(getListPostData).then((resolvedData: any) => {
-        if (resolvedData?.data?.responseCode === 0) {
-          let MessageList = resolvedData?.data?.response?.data.results;
-          hasMore.current = resolvedData?.data?.response?.data.links.next
-            ? true
-            : false;
-          setReadData((prev) => [...prev, ...MessageList]);
-        }
-      });
-    }
-    // eslint-disable-next-line
-  }, [pageNo]);
+  // useEffect(() => {
+  //   if (initialRender.current) {
+  //     initialRender.current = false;
+  //   } else {
+  //     getList(getListPostData).then((resolvedData: any) => {
+  //       if (resolvedData?.data?.responseCode === 0) {
+  //         let MessageList = resolvedData?.data?.response?.data.results;
+  //         hasMore.current = resolvedData?.data?.response?.data.links.next
+  //           ? true
+  //           : false;
+  //         setReadData((prev) => [...prev, ...MessageList]);
+  //       }
+  //     });
+  //   }
+  //   // eslint-disable-next-line
+  // }, [pageNo]);
 
   useEffect(() => {
     if (initialRender.current) {
@@ -159,7 +158,7 @@ function Notification() {
       ) <= 1
     ) {
       if (hasMore.current) {
-        setPageNo((prev) => prev + 1);
+        // setPageNo((prev) => prev + 1);
       }
     }
   };

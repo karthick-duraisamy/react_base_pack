@@ -56,7 +56,7 @@ const HeaderItems = () => {
   const [SgetAirlineCode] = sessionStorageAccessor("airlineCode");
   const { isSmallScreen } = useResize(767);
 
-  let userName = user?.firstName + " " + user?.lastName;
+  let userName = user?.firstName ? user?.firstName + " " + user?.lastName : 'Super Admin';
 
   let userRole;
   if (user?.groups?.length) {
@@ -217,7 +217,7 @@ const HeaderItems = () => {
                   trigger="click"
                   overlayClassName="user-actions"
                   placement="bottomRight"
-                  content={<ProfileDropDown />}
+                  // content={<ProfileDropDown />}
                   title={null}
                   className="cls-user-dropdown"
                 >

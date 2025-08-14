@@ -19,7 +19,7 @@ type authenticated = boolean | null;
 // Define the initial state for user authentication
 const initialState: { user: User | null; isAuthenticated: authenticated } = { 
   user: null as unknown as User, 
-  isAuthenticated: null 
+  isAuthenticated: true 
 };
 
 /**
